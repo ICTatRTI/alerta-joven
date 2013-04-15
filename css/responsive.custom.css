@@ -1,0 +1,143 @@
+/*
+.color1 { color: #c4c4c3}
+.color2 { color: #f6f5f5}
+.color3 { color: #ffffff}
+.color4 { color: #248653}
+.color5 { color: #f7f6f6}
+.color6 { color: #fefdf7}
+.color7 { color: #383e68}
+.color8 { color: #288653}
+.color9 { color: #add3e7}
+.color10 { color: #86abc9}
+.color11 { color: #fafafa}
+.color12 { color: #6d87a9}
+.color13 { color: #7d92b0}
+.color14 { color: #566b91}
+.color15 { color: #445780}
+*/
+@media only screen and (max-width: 481px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\000038}}
+  #site-name {
+    font-size: 36px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\0000312}}
+  .region-two-66-33-second .block {
+    margin: 0 0 10px;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\0000315}}
+  .region-two-66-33-second .block .block-inner {
+    border-left: 1px solid #bbc6d6;
+  }
+}
+@media only screen and (max-width: 655px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\0000327}}
+  #admin-menu {
+    display: none;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\0000331}}
+  .region-leaderboard .block-user-menu,
+  .region-leaderboard #block-superfish-2 {
+    float: none;
+    border-bottom: 1px solid #86abc9;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\0000337}}
+  .region-header {
+    position: static;
+    margin: 10px 0;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\0000341}}
+  .region-header .region-inner {
+    border-right: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\0000346}}
+  #branding {
+    margin: 5px 5px 4px 5px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\0000350}}
+  #site-name {
+    padding: 0 10px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\0000355}}
+  #site-name,
+  .region-header {
+    text-align: center;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\0000360}}
+  .region-footer #block-block-1 {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 679px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\0000372}}
+  #block-views-slideshows-block .field-slideshow-caption {
+    position: static;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    margin-top: -1px;
+    background: #445780;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #383e68), color-stop(100%, #596c91));
+    background: -webkit-linear-gradient(#383e68, #596c91);
+    background: -moz-linear-gradient(#383e68, #596c91);
+    background: -o-linear-gradient(#383e68, #596c91);
+    background: linear-gradient(#383e68, #596c91);
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\0000381}}
+  #block-views-slideshows-block .field-slideshow-caption-text {
+    line-height: 1.4;
+    display: block;
+    padding: 15px 10px 15px 10px;
+    font-style: italic;
+    font-weight: bold;
+  }
+}
+@media only screen and (min-width: 680px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\0000397}}
+  #block-views-slideshows-block .field-slideshow-caption {
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    background: url(images/slider-caption-1000.png) no-repeat left top transparent;
+    color: #fff;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\00003107}}
+  #block-views-slideshows-block .field-slideshow-caption-text {
+    line-height: 1.2;
+    display: block;
+    padding: 40px 20px 0 7px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 0.96em;
+  }
+}
+@media only screen and (max-width: 305px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\00003122}}
+  #site-name {
+    font-size: 32px;
+    line-height: 1.1;
+    padding: 10px;
+  }
+}
+@media only screen and (max-width: 959px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\00003133}}
+  #menu-bar .sf-menu.sf-style-default a {
+    padding: 0 10px;
+    border: 0;
+  }
+}
+@media only screen and (min-width: 959px) and (max-width: 1030px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\00003139}}
+  #menu-bar .sf-menu.sf-style-default a {
+    padding: 0 6px;
+    border: 0;
+    font-size: 0.9em;
+  }
+}

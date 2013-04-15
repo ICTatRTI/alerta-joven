@@ -1,0 +1,1952 @@
+/*
+.color1 { color: #c4c4c3}
+.color2 { color: #f6f5f5}
+.color3 { color: #ffffff}
+.color4 { color: #248653}
+.color5 { color: #f7f6f6}
+.color6 { color: #fefdf7}
+.color7 { color: #383e68}
+.color8 { color: #288653}
+.color9 { color: #add3e7}
+.color10 { color: #86abc9}
+.color11 { color: #fafafa}
+.color12 { color: #6d87a9}
+.color13 { color: #7d92b0}
+.color14 { color: #566b91}
+.color15 { color: #445780}
+*/
+/*
+ * @file
+ * global.styles
+ *
+ * Styles you add here will load for all device sizes, they are "global", as
+ * opposed to "responsive" styles, which only load for a given breakpoint (media
+ * query) that you set in theme settings. See the README for more details.
+ *
+ *
+ * How to use this file:
+ * --------------------
+ *
+ * There are many empty selectors and some basic styles to act as a guide.
+ * Nothing is set in stone and you can change anything - even delete all of it
+ * and start with your own clean slate.
+ *
+ * To FORCE PRINT all selectors you can search and replace a single { (opening
+ * curly brace) and insert an empty comment. This is very useful in conjuction
+ * with FireSass: https://addons.mozilla.org/en-US/firefox/addon/firesass-for-firebug/
+ *
+ * See global.base also which includes normalize.css and some additional
+ * helper classes and base styles.
+ */
+/* =============================================================================
+ *   Base
+ * ========================================================================== */
+/*
+ * To preserve theme settings never apply font properties to the HTML element.
+ * This is critically important if you are using the Responsive JavaScript
+ * feature as this relies on being able to set a pseudo font family on the HTML
+ * element. If you need to set default font properties of any kind use the BODY
+ * element as these can be overridden using font theme settings.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\0000341}}
+html {
+  background: #c4c4c3;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\0000345}}
+body {
+  font-family: "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 87.5%;
+  color: #4e4e4e;
+}
+
+/* =============================================================================
+ *   HTML Elements
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\0000373}}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003115}}
+pre,
+code,
+tt,
+samp,
+kbd,
+var {
+  font-family: Consolas, Monaco, "Courier New", Courier, monospace, sans-serif;
+}
+
+/* =============================================================================
+ *   Links
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003124}}
+a {
+  text-decoration: none;
+  color: #445780;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003135}}
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003144}}
+.node a,
+.at-panel a,
+.sidebar a {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.15s;
+  -moz-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003149}}
+.node a:hover, .node a:focus,
+.at-panel a:hover,
+.at-panel a:focus,
+.sidebar a:hover,
+.sidebar a:focus {
+  text-decoration: none;
+  color: #C00430;
+}
+
+/* =============================================================================
+ *   Wrappers
+ * ========================================================================== */
+/*
+ * Outer wrappers:
+ * - #page-wrapper: body > #page-wrapper
+ * - #page: body > #page-wrapper > #page
+ * - .container: body > #page-wrapper > #page.container
+ *
+ * The .container class holds the page width value from theme settings. You can
+ * style the .container class but do not add width such as border, padding,
+ * margins etc.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003175}}
+#page {
+  background: #fff;
+}
+
+/*
+ * Wraps all header elements - branding and .region-header
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003185}}
+#header {
+  position: relative;
+  border-top: 4px solid #383e68;
+  border-bottom: 4px solid #383e68;
+}
+
+/*
+ * Wraps the sidebars the content column
+ */
+/*
+ * Main content column wrapper
+ */
+/*
+ * Wraps the main-content-header, the content region and feed-icons. Use this
+ * wrapper to style the entire main content column
+ */
+/*
+ * Wraps the content region, avoid applying styles to this wrapper, its used
+ * mainly for position and invisible gutters and can be problematic to style
+ */
+/*
+ * Footer wrapper
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003222}}
+#footer {
+  background: url(images/footer-background.png) no-repeat center top #3b426c;
+  color: #fff;
+  font-size: 0.9em;
+  min-height: 100px;
+  padding: 70px 0 20px;
+  margin-top: 60px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003232}}
+.front #footer {
+  margin-top: 10px;
+}
+
+/*
+ * Panels may need additional margin wrangling when in the $content region
+ */
+/* =============================================================================
+ *   Branding
+ * ========================================================================== */
+/*
+ * Wraps all the branding elements, logo, name and slogan
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003252}}
+#branding {
+  margin: 5px 5px 4px 220px;
+}
+
+/*
+ * Logo
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003260}}
+#logo {
+  padding: 10px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003263}}
+#logo img {
+  vertical-align: bottom;
+}
+
+/*
+ * Wrapper for the site name and slogan (hgroup)
+ */
+/*
+ * Site name (h1)
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003278}}
+#site-name {
+  font-size: 42px;
+  line-height: 86px;
+  margin: 0;
+  padding: 0 20px;
+  text-transform: uppercase;
+  background: #EBEBEB;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003289}}
+#site-name a:link, #site-name a:visited {
+  text-decoration: none;
+  color: #004990;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003295}}
+#site-name a:hover, #site-name a:focus {
+  text-decoration: none;
+}
+
+/*
+ * Site slogan (h2)
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003305}}
+#site-slogan {
+  margin: 0;
+}
+
+/* =============================================================================
+ *   Page content header
+ * ========================================================================== */
+/*
+ * Main content header wraps the page title, tabs and actions links
+ */
+/*
+ * The main page title (h1)
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003323}}
+#page-title {
+  line-height: 1;
+  margin: 20px 0 10px;
+}
+
+/* =============================================================================
+ *   Misc Global Styles
+ * ========================================================================== */
+/*
+ * Feed icons
+ */
+/*
+ * Aggregator feed source
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003342}}
+#aggregator .feed-source .feed-icon {
+  display: inline;
+  float: none;
+  margin-right: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003350}}
+.feed-details dt,
+.feed-details dd {
+  display: inline;
+  margin: 0;
+}
+
+/*
+ * Generic styles for the more link
+ */
+/*
+ * Generic styles for links. See the ul.links declaration in node and comment stylesheets
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003365}}
+ul.links {
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003369}}
+ul.links.inline {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003373}}
+ul.links li {
+  display: inline;
+  list-style: none;
+  padding: 0 10px 0 0;
+}
+
+/*
+ * Search results are an ordered list so reset the margin
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003384}}
+.search-results {
+  margin: 0;
+  padding: 0;
+}
+
+/* =============================================================================
+ *   Regions
+ * ========================================================================== */
+/*
+ * Standard region wrapper, don't add width to any regions, you will bork the layout - no margin, padding or borders etc
+ */
+/*
+ * Regions have an inner div - perfect for adding margin, padding or borders
+ */
+/*
+ * Regions can be nested, such as when using Panels
+ */
+/*
+ * Leaderboard region, at the very top ususally
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003416}}
+.region-leaderboard {
+  background: #445780;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #383e68), color-stop(100%, #596c91));
+  background: -webkit-linear-gradient(#383e68, #596c91);
+  background: -moz-linear-gradient(#383e68, #596c91);
+  background: -o-linear-gradient(#383e68, #596c91);
+  background: linear-gradient(#383e68, #596c91);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003421}}
+.region-leaderboard .region-inner {
+  border-top: 2px solid #86abc9;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003426}}
+.region-leaderboard .block-title {
+  border: 0;
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003430}}
+.region-leaderboard .block {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003433}}
+.region-leaderboard .block ul {
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003436}}
+.region-leaderboard .block ul li {
+  margin: 0;
+  padding: 0;
+  display: block;
+  float: left;
+  list-style: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003445}}
+.region-leaderboard .block a {
+  color: #add3e7;
+  font-size: .96em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003450}}
+.region-leaderboard .block a:hover, .region-leaderboard .block a:focus {
+  color: #fff;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003458}}
+.region-leaderboard .block-inner {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003462}}
+.region-leaderboard .block-locale {
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003467}}
+.region-leaderboard .block-locale li a {
+  display: block;
+  padding: 10px 10px 10px 0;
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003473}}
+.region-leaderboard .block-locale li a:hover, .region-leaderboard .block-locale li a:focus {
+  color: #fff;
+  text-decoration: underline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003482}}
+.region-leaderboard .block-user-menu {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003485}}
+.region-leaderboard .block-user-menu .menu li {
+  border-right: 1px solid #86abc9;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003488}}
+.region-leaderboard .block-user-menu .menu li a {
+  display: block;
+  padding: 10px 11px 10px 10px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.15s;
+  -moz-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003499}}
+.region-leaderboard #block-block-5 {
+  float: right;
+  margin: 7px 7px 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003503}}
+.region-leaderboard #block-block-5 li {
+  margin: 0 2px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003507}}
+.region-leaderboard #block-block-5 li a {
+  width: 24px;
+  height: 24px;
+  padding: 2px;
+  display: block !important;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-color: transparent;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003515}}
+.region-leaderboard #block-block-5 li.twitter a {
+  background: url(images/twitter-24.png) no-repeat 0 0 transparent;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003521}}
+.region-leaderboard #block-block-5 li.facebook a {
+  background: url(images/facebook-24.png) no-repeat 0 0 transparent;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003527}}
+.region-leaderboard #block-block-5 li.youtube a {
+  background: url(images/youtube-24.png) no-repeat 0 0 transparent;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003536}}
+.region-leaderboard #block-search-form {
+  float: right;
+  margin: 7px 10px 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003541}}
+.region-leaderboard #block-search-form input {
+  font-size: 0.96em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003545}}
+.region-leaderboard #block-search-form input.form-text {
+  border: 1px solid #004990;
+  height: 22px;
+  padding: 0 2px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003551}}
+.region-leaderboard #block-search-form input.form-submit {
+  margin: 1px 0 0;
+  font-weight: 400;
+}
+
+/*
+ * Header region, embedded in the #header
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003566}}
+.region-header {
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003571}}
+.region-header .region-inner {
+  border-right: 3px solid #004990;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003575}}
+.region-header .block, .region-header p {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003583}}
+.region-header .entrena-logo {
+  margin: 0 10px 0 15px;
+}
+
+/*
+ * Generally used to output Drupals help block, if the help module is enabled
+ */
+/*
+ * Secondary content
+ */
+/*
+ * Sits above the main content header, like a content-top region
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003607}}
+.region-highlighted .block {
+  margin: 10px 0 0;
+}
+
+/*
+ * Sits below the main content, like a content-bottom region
+ */
+/*
+ * Sidebars - targets both
+ */
+/*
+ * First sidebar
+ */
+/*
+ * Second sidebar
+ */
+/*
+ * Tertiary content
+ */
+/*
+ * Footer region
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003649}}
+.region-footer .block {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003654}}
+.region-footer #block-block-1 {
+  font-size: 0.9em;
+  line-height: 1.2em;
+  width: 66%;
+}
+
+/* =============================================================================
+ *   Primary, Secondary and Menu Bar region menus
+ * ========================================================================== */
+/*
+ * Use one of the following id's for granular control:
+ *  - #menu-bar (menu bar region)
+ *  - #primary-menu (main menu)
+ *  - #secondary-menu (secondary/user menu)
+ * You can target all of these with .nav or div[id$="menu-bar"]
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003678}}
+.nav {
+  clear: both;
+  margin: 0;
+  background: #f9f9f9;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003685}}
+.nav ul,
+.nav ul.menu {
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003691}}
+.nav li,
+.nav ul.menu li {
+  display: inline;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003700}}
+.nav li a,
+.nav ul.menu li a {
+  display: block;
+  white-space: nowrap;
+  padding: 0 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003711}}
+.nav .block {
+  margin: 0;
+}
+
+/* =============================================================================
+ *   Superfish
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003721}}
+ul.sf-menu {
+  margin-bottom: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003724}}
+ul.sf-menu a {
+  border-left: 0;
+  border-top: 0;
+  padding: 0 10px;
+  text-decoration: none;
+  height: 2.5em;
+  line-height: 2.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003738}}
+ul.sf-menu li:hover, ul.sf-menu li.sfHover {
+  outline: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003746}}
+ul.sf-menu a:focus, ul.sf-menu a:hover, ul.sf-menu a:active {
+  outline: 0;
+}
+
+/*
+ * Superfish blocks
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003760}}
+.block-superfish ul {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003771}}
+.block-superfish li {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/*
+ * Vertical style
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003781}}
+.sf-vertical {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003784}}
+.sf-vertical li {
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003790}}
+.sf-vertical li:hover ul, .sf-vertical li.sfHover ul {
+  left: 100%;
+  top: 0;
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003797}}
+.sf-vertical li a {
+  padding: 0 10px;
+}
+
+/*
+ * Navbar style
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003807}}
+.sf-navbar {
+  padding-bottom: 0 !important;
+}
+
+/*
+ * Sensible padding for the default style
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003817}}
+#menu-bar .block {
+  background: #445780;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #596c91), color-stop(100%, #383e68));
+  background: -webkit-linear-gradient(#596c91, #383e68);
+  background: -moz-linear-gradient(#596c91, #383e68);
+  background: -o-linear-gradient(#596c91, #383e68);
+  background: linear-gradient(#596c91, #383e68);
+  border: 1px solid #383e68;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  margin: 0 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003825}}
+#menu-bar .sf-menu.sf-style-default {
+  background: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003830}}
+#menu-bar .sf-menu.sf-style-default li,
+#menu-bar .sf-menu.sf-style-default li li,
+#menu-bar .sf-menu.sf-style-default .sf-menu.sf-style-default.sf-navbar {
+  background: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003834}}
+#menu-bar .sf-menu.sf-style-default a {
+  font-size: 0.96em;
+  padding: 0 7px;
+  border: none;
+  color: #f9f9f9;
+  border-right: 1px solid #383e68;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.15s;
+  -moz-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003846}}
+#menu-bar .sf-menu.sf-style-default a:visited {
+  color: #f9f9f9;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003851}}
+#menu-bar .sf-menu.sf-style-default a:hover, #menu-bar .sf-menu.sf-style-default a:focus {
+  text-decoration: none;
+  color: #fff;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003858}}
+#menu-bar .sf-menu.sf-style-default li.last a {
+  border: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003869}}
+#menu-bar .sf-menu.sf-style-default .active-trail,
+#menu-bar .sf-menu.sf-style-default li:hover,
+#menu-bar .sf-menu.sf-style-default li.sfHover,
+#menu-bar .sf-menu.sf-style-default a:focus,
+#menu-bar .sf-menu.sf-style-default a:hover,
+#menu-bar .sf-menu.sf-style-default a:active {
+  background: rgba(255, 255, 255, 0.07);
+  outline: 0 none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003880}}
+.lang-es #menu-bar .sf-menu.sf-style-default a {
+  padding: 0 5px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003890}}
+.not-front #menu-bar .block {
+  margin-top: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003897}}
+#block-superfish-2 {
+  float: left;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003904}}
+#block-superfish-2 .sf-menu.sf-style-default li,
+#block-superfish-2 .sf-menu.sf-style-default li li,
+#block-superfish-2 .sf-menu.sf-style-default .sf-menu.sf-style-default.sf-navbar {
+  background: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003908}}
+#block-superfish-2 .sf-menu.sf-style-default a {
+  padding: 0 10px;
+  border: none;
+  color: #add3e7;
+  font-size: .96em;
+  height: 40px;
+  line-height: 40px;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.15s;
+  -moz-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003919}}
+#block-superfish-2 .sf-menu.sf-style-default a:visited {
+  color: #add3e7;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003924}}
+#block-superfish-2 .sf-menu.sf-style-default a:hover, #block-superfish-2 .sf-menu.sf-style-default a:focus {
+  text-decoration: none;
+  color: #fff;
+  background: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003931}}
+#block-superfish-2 .sf-menu.sf-style-default ul {
+  background: #383E68;
+  top: 40px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003936}}
+#block-superfish-2 .sf-menu.sf-style-default ul a {
+  height: 30px;
+  line-height: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003945}}
+#block-superfish-2 .sf-menu.sf-style-default ul .sf-menu.sf-style-default li:hover,
+#block-superfish-2 .sf-menu.sf-style-default ul .sf-menu.sf-style-default li.sfHover,
+#block-superfish-2 .sf-menu.sf-style-default ul .sf-menu.sf-style-default a:focus,
+#block-superfish-2 .sf-menu.sf-style-default ul .sf-menu.sf-style-default a:hover,
+#block-superfish-2 .sf-menu.sf-style-default ul .sf-menu.sf-style-default a:active {
+  outline: 0 none;
+}
+
+/* =============================================================================
+ *   Menu Toggles
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003964}}
+.at-mt .at-menu-toggle,
+.at-mt .at-menu-toggle ul,
+.at-mt .at-menu-toggle ul.menu {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003970}}
+.at-mt .at-menu-toggle-button {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003973}}
+.at-mt .at-menu-toggle-button a {
+  color: #fff;
+  outline: 0;
+  padding: 0 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003979}}
+.at-mt .at-menu-toggle-button a:hover, .at-mt .at-menu-toggle-button a:focus {
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003986}}
+.at-mt .at-menu-toggle ul a {
+  padding: 0 10px;
+  white-space: nowrap;
+}
+
+/* =============================================================================
+ *   Menus, usually blocks
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\00003997}}
+ul.menu {
+  padding-left: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031000}}
+ul.menu ul {
+  padding-left: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031008}}
+ul.menu li {
+  margin: 0;
+}
+
+/* If li.content exists it's a problem, so reset the padding */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031037}}
+.block .menu li.content {
+  padding: 0;
+}
+
+/* =============================================================================
+ *   Book navigation menu
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031054}}
+.book-navigation .page-up {
+  /* Prevent text wrapping to a new line, assumes English "up" is used (two characters) */
+  min-width: 2em;
+  white-space: nowrap;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031060}}
+.book-navigation .menu {
+  margin-left: 0;
+}
+
+/* =============================================================================
+ *   Breadcrumbs
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031070}}
+#breadcrumb {
+  margin: 10px 0 30px;
+  font-size: 0.96em;
+  color: #C4C4C3;
+  /* If the label is set to show in theme settings the label class is added */
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031076}}
+#breadcrumb .breadcrumb-label {
+  font-size: 1em;
+  display: inline;
+  padding-right: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031081}}
+#breadcrumb .breadcrumb-label:after {
+  content: ":";
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031086}}
+#breadcrumb ol {
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031091}}
+#breadcrumb .with-breadcrumb-label ol {
+  display: inline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031095}}
+#breadcrumb li {
+  list-style: none;
+  display: inline;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031104}}
+#breadcrumb a {
+  color: #b0b0af;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.15s;
+  -moz-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031111}}
+#breadcrumb a:hover, #breadcrumb a:focus {
+  text-decoration: none;
+  color: #C00430;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031119}}
+.breadcrumb-wrapper {
+  margin: 0;
+  border-bottom: 1px solid #ebebeb;
+}
+
+/* =============================================================================
+ *   Pagers
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031131}}
+ul.pager {
+  clear: both;
+  margin: 0;
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031138}}
+.item-list ul.pager li {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031143}}
+ul.pager li {
+  background-image: none;
+  display: inline;
+  list-style-type: none;
+  padding: .5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031149}}
+ul.pager li.pager-current {
+  font-weight: 700;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031155}}
+.block ul.pager li {
+  margin: 0;
+}
+
+/*
+ * Theme the various states of pager links
+ */
+/* =============================================================================
+ *   Skip Navigation
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031192}}
+#skip-link {
+  left: 50%;
+  margin-left: -6.5em;
+  margin-top: 0;
+  padding: 0 0.5em;
+  position: absolute;
+  width: 12em;
+  z-index: 50;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031201}}
+#skip-link a {
+  background: #444;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: block;
+  line-height: 2;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031212}}
+#skip-link a:link, #skip-link a:visited {
+  background: #444;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: block;
+  line-height: 2;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031224}}
+#skip-link a:hover, #skip-link a:focus, #skip-link a:active {
+  outline: 0;
+}
+
+/* =============================================================================
+ *   Tabs (local tasks)
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031235}}
+#tasks {
+  margin-bottom: 15px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031240}}
+ul.primary {
+  border-bottom-color: #cccccc;
+  margin: 20px 0;
+  padding: 0 0 0 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031245}}
+ul.primary li {
+  display: block;
+  float: left;
+  margin: 0 1px -1px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031250}}
+ul.primary li a {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ebebeb), color-stop(100%, #f9f9f9));
+  background: -webkit-linear-gradient(#ebebeb, #f9f9f9);
+  background: -moz-linear-gradient(#ebebeb, #f9f9f9);
+  background: -o-linear-gradient(#ebebeb, #f9f9f9);
+  background: linear-gradient(#ebebeb, #f9f9f9);
+  border-color: #cccccc;
+  margin-right: 1px;
+  padding: 0 10px;
+  display: block;
+  float: left;
+  height: 2em;
+  line-height: 2em;
+  -webkit-border-radius: 6px 6px 0 0;
+  -moz-border-radius: 6px 6px 0 0;
+  -ms-border-radius: 6px 6px 0 0;
+  -o-border-radius: 6px 6px 0 0;
+  border-radius: 6px 6px 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031262}}
+ul.primary li a:hover, ul.primary li a:focus {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ebebeb), color-stop(100%, #f9f9f9));
+  background: -webkit-linear-gradient(#ebebeb, #f9f9f9);
+  background: -moz-linear-gradient(#ebebeb, #f9f9f9);
+  background: -o-linear-gradient(#ebebeb, #f9f9f9);
+  background: linear-gradient(#ebebeb, #f9f9f9);
+  border-color: #cccccc;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031272}}
+ul.primary li.active a,
+ul.primary li.active a:hover,
+ul.primary li.active a:focus {
+  background: white;
+  border-bottom-color: white;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031280}}
+ul.secondary {
+  border-bottom: 1px solid #cccccc;
+  margin: 1em 0 0;
+  padding: 0 0.3em 1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031285}}
+ul.secondary li {
+  border-right: 0;
+  list-style: none;
+  padding: 0 10px 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031292}}
+ul.secondary li a:hover, ul.secondary li a.active {
+  border-bottom: none;
+  text-decoration: underline;
+}
+
+/* =============================================================================
+ *   Action links
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031305}}
+ul.action-links {
+  margin: 20px 0 0;
+  list-style: none;
+}
+
+/* =============================================================================
+ *  Field Styling
+ * ========================================================================== */
+/*
+ * Wrapper for any field
+ */
+/*
+ * Above and inline classes are on the field wrapper
+ */
+/*
+ * When labels are set to inline in field display settings the clearfix class is automatically added
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031332}}
+.field-label-inline {
+  /* Remove the margin on inline field lables to preserve vertical formatting */
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031335}}
+.field-label-inline .field-label {
+  margin: 0;
+}
+
+/*
+ * Labels are h2 in Adaptivetheme. Use a strong selector to mitigate unwanted ineritance issues
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031343}}
+.field-label {
+  font-size: 1em;
+  font-weight: 700;
+  font-family: inherit;
+  line-height: inherit;
+  margin-bottom: 0;
+}
+
+/*
+ * Field types (Core)
+ */
+/*
+ * Image fields use the <figure> and <figcaption> elements from HTML5
+ */
+/*
+ * Taxonomy
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031372}}
+.field-type-taxonomy-term-reference {
+  /* The same bottom margin as p, blockquote, ul, ol and dl */
+  margin-bottom: 1.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031377}}
+.field-type-taxonomy-term-reference.field-label-inline .field-items {
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031382}}
+.field-type-taxonomy-term-reference.field-label-inline .field-item {
+  display: inline;
+  list-style: none;
+  padding: 0 10px 0 0;
+}
+
+/*
+ * Text
+ */
+/*
+ * Long text
+ */
+/*
+ * Text with summary
+ */
+/*
+ * File
+ */
+/*
+ * Number/Integer
+ */
+/*
+ * Decimal
+ */
+/*
+ * Number float
+ */
+/*
+ * List
+ */
+/*
+ * List boolean
+ */
+/*
+ * List integer
+ */
+/*
+ * List float
+ */
+/*
+ * Field types (Contrib)
+ */
+/*
+ * Named fields
+ */
+/*
+ * Underscores in field name are replaced with dashes
+ */
+/*
+ * Image Alignment Theme Settings - included here so you can easily override
+ */
+/*
+ * Float none setting
+ */
+/*
+ * Float left setting
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031497}}
+.ia-l .field-type-image figure,
+.iat-l .field-type-image figure {
+  margin: 5px 20px 15px 0;
+}
+
+/*
+ * Centered setting
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031506}}
+.ia-c .field-type-image figure,
+.iat-c .field-type-image figure {
+  margin: 5px auto 15px;
+}
+
+/*
+ * Float right setting
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031515}}
+.ia-r .field-type-image figure,
+.iat-r .field-type-image figure {
+  margin: 5px 0 15px 20px;
+}
+
+/* =============================================================================
+ *   Block Styling
+ * ========================================================================== */
+/*
+ * Main wrapper for most blocks, block_system_main does not have it
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031528}}
+.block {
+  margin-bottom: 20px;
+}
+
+/*
+ * Inner wrapper for most blocks, good for margin, padding and borders, block_system_main does not have it
+ */
+/*
+ * The first block in the region
+ */
+/*
+ * The last block in the region
+ */
+/*
+ * Zebra striping for each block in the region
+ */
+/*
+ * Zebra striping for each block in the region
+ */
+/*
+ * Block title
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031566}}
+.block-title {
+  margin: 0;
+}
+
+/*
+ * Block content wrapper
+ */
+/*
+ * Match item list and block menu margin and padding
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031583}}
+.block-content ul,
+.block-content ol {
+  padding: 0 0 0 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031587}}
+.block-content li {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Block for the latest news items in the first category
+ */
+/*
+ * Block for the latest news items in the first feed
+ */
+/*
+ * First block created with "Add block" link
+ */
+/*
+ * "Recent blog posts" block
+ */
+/*
+ * "Book navigation" block for the current book's table of contents
+ */
+/*
+ * "Recent comments" block
+ */
+/*
+ * "Active forum topics" block
+ */
+/*
+ * "New forum topics" block
+ */
+/*
+ * Language switcher block
+ */
+/*
+ * Custom menu block
+ */
+/*
+ * "Recent content" block
+ */
+/*
+ * "Syndicate" block for primary RSS feed; see also page.css's .feed-icon
+ */
+/*
+ * "Most recent poll" block
+ */
+/*
+ * "Author information" block for the profile of the page's author
+ */
+/*
+ * "Search form" block
+ */
+/*
+ * "Shortcuts" block
+ */
+/*
+ * "Popular content" block
+ */
+/*
+ * "Main menu" block
+ */
+/*
+ * "Management" block for Drupal management menu
+ */
+/*
+ * "Navigation" block for Drupal navigation menu
+ */
+/*
+ * "User menu" block for Drupal user menu
+ */
+/*
+ * "System help" block
+ */
+/*
+ * "Main page content" block
+ */
+/*
+ * "Powered by Drupal" block
+ */
+/*
+ * "User login form" block
+ */
+/*
+ * "Who's new" block for a list of the newest users
+ */
+/*
+ * "Who's online" block for a list of the online users
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031766}}
+.region-two-66-33-second .block-title,
+.sidebar .block-title {
+  color: #004a8b;
+  font-size: 1.1em;
+  margin: 0;
+  padding: 4px 10px;
+  line-height: 1;
+  background: #A9CCE8;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(100%, #7d91af));
+  background-image: -webkit-linear-gradient(left, #ffffff, #7d91af);
+  background-image: -moz-linear-gradient(left, #ffffff, #7d91af);
+  background-image: -o-linear-gradient(left, #ffffff, #7d91af);
+  background-image: linear-gradient(left, #ffffff, #7d91af);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031776}}
+.region-two-66-33-second .block-content,
+.sidebar .block-content {
+  padding: 0 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031782}}
+.region-two-66-33-second .view-content ul,
+.sidebar .view-content ul {
+  margin: 0;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031786}}
+.region-two-66-33-second .view-content ul li,
+.sidebar .view-content ul li {
+  list-style: none;
+  border-bottom: 1px dashed #eaeae8;
+  margin: 1px 0;
+  padding: 0;
+  line-height: 1.1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031793}}
+.region-two-66-33-second .view-content ul li a,
+.sidebar .view-content ul li a {
+  display: block;
+  padding: 5px 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031805}}
+.region-two-66-33-second .block {
+  margin: 10px 0 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031812}}
+.region-two-66-33-second .block-content {
+  font-size: 0.95em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031819}}
+.sidebar .block {
+  margin: 0 0 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031828}}
+#block-views-slideshows-block {
+  position: relative;
+  margin: 10px 0;
+  overflow: hidden;
+  /*
+    .field-slideshow-caption {
+      position: absolute;
+      bottom: 0;
+      height: 60px;
+      width: 100%;
+      background: url(images/frontpage-slideshow-caption-background-1000.png) no-repeat right top transparent;
+      color: #fff;
+    }
+    .field-slideshow-caption-text {
+      line-height: 1;
+      display: block;
+      padding: 32px 20px 0 10px;
+      font-style: italic;
+      font-weight: bold;
+    }
+  */
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031833}}
+#block-views-slideshows-block .contextual-links-wrapper {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031837}}
+#block-views-slideshows-block .field-slideshow {
+  padding: 0 !important;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031843}}
+#block-views-slideshows-block .field-slideshow-slide {
+  line-height: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031869}}
+#block-views-slideshows-block .field-slideshow-controls a {
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  top: 45%;
+  z-index: 499;
+  opacity: 0.4;
+  display: block !important;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 0;
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+  background-color: transparent;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031879}}
+#block-views-slideshows-block .field-slideshow-controls a:hover {
+  opacity: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031884}}
+#block-views-slideshows-block .field-slideshow-controls .prev {
+  background: url(images/prev-16.png) no-repeat 0 0 transparent;
+  left: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031888}}
+#block-views-slideshows-block .field-slideshow-controls .next {
+  background: url(images/next-16.png) no-repeat 0 0 transparent;
+  right: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031899}}
+#block-menu-menu-legal {
+  float: right;
+  clear: both;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031903}}
+#block-menu-menu-legal ul {
+  padding: 0;
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031907}}
+#block-menu-menu-legal ul li {
+  display: block;
+  float: left;
+  padding: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031912}}
+#block-menu-menu-legal ul li a {
+  color: #fff;
+}
+
+/* =============================================================================
+ *   Node Styling
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031926}}
+.node {
+  margin-bottom: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031943}}
+.node .node-title {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031958}}
+.node .node-content h2, .node .node-content h3, .node .node-content h4, .node .node-content h5 {
+  margin: 1.5em 0 0.5em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031962}}
+.node .node-content ul {
+  margin: 0 0 1em;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031966}}
+.node .node-content ul li {
+  margin: 0 0 10px;
+  padding: 0 0 0 15px;
+  list-style: none;
+  background: url(images/list-style-bullet.png) no-repeat left 6px transparent;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031974}}
+.node .node-content ul.simple-list {
+  padding: 0 0 0 15px;
+  color: #7D91AF;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000031979}}
+.node .node-content ul.simple-list li {
+  margin: 0;
+  padding: 0;
+  list-style: square;
+  background: none;
+}
+
+/*
+ * All nodes are given a node-FOO class that describes the type of content that
+ * it is. If you create a new content type called "my-custom-type", it will
+ * receive a "node-my-custom-type" class.
+ */
+/* =============================================================================
+ *   Comment Styling - Comments, comment wrapper, comment form
+ * ========================================================================== */
+/*
+ * Wrapper for the list of comments and its titles
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032035}}
+#comments {
+  margin: 1.5em 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032039}}
+#comments h2.comment-title {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032043}}
+#comments h2.comment-form {
+  margin: 0;
+}
+
+/*
+ * Wrapper for a single comment
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032053}}
+.comment {
+  margin-bottom: 20px;
+}
+
+/*
+ * Comment title
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032084}}
+.comment-title {
+  margin: 0;
+}
+
+/*
+ * Comment states
+ */
+/*
+ * Preview of the comment before submitting new or updated comment
+ */
+/*
+ * "New" marker for comments that are new for the current user
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032116}}
+.new {
+  color: #cc0000;
+}
+
+/*
+ * Nested comments are indented
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032124}}
+.indented {
+  margin-left: 40px;
+}
+
+/* =============================================================================
+ *   Forms
+ * ========================================================================== */
+/*
+ * Wrapper for a form element (or group of form elements) and its label
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032140}}
+.form-item input.error,
+.form-item textarea.error,
+.form-item select.error {
+  border: 1px solid #cc0000;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032144}}
+.form-item label {
+  font-weight: 700;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032151}}
+.form-item .description {
+  font-size: 0.85em;
+}
+
+/*
+ * Highlight marks and form required mark
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032165}}
+.marker,
+.form-required {
+  color: #cc0000;
+}
+
+/*
+ * The submit button
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032179}}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  background: #445780;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #596c91), color-stop(100%, #383e68));
+  background: -webkit-linear-gradient(#596c91, #383e68);
+  background: -moz-linear-gradient(#596c91, #383e68);
+  background: -o-linear-gradient(#596c91, #383e68);
+  background: linear-gradient(#596c91, #383e68);
+  border: 1px solid #383e68;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+  color: #FFFFFF;
+  padding: 4px 6px;
+  margin: 0 3px 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032192}}
+.container-inline div,
+.container-inline label {
+  display: inline;
+}
+
+/*
+ * Define consistent borders
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032200}}
+fieldset {
+  border: 1px solid #cccccc;
+}
+
+/*
+ * Tips for Drupal's input formats
+ */
+/*
+ * Buttons used by contrib modules like Media
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032214}}
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+
+/*
+ * Password confirmation
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032223}}
+.password-parent,
+.confirm-parent {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032230}}
+#search-form .container-inline div,
+#search-form .container-inline label {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032233}}
+#search-form .form-item, #search-form .form-actions {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032238}}
+#search-form .form-wrapper {
+  margin-bottom: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032243}}
+#search-form .form-type-textfield label {
+  margin-bottom: 2px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032248}}
+#search-form input.form-text {
+  max-width: 95%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032259}}
+.page-search #block-system-main ul {
+  margin: 0;
+  padding: 0 0 0 18px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032265}}
+.page-search ol.search-results {
+  margin: 0;
+  padding: 0 0 0 20px;
+  border-top: 1px dashed #eaeae8;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032272}}
+.page-search ol.search-results p,
+.page-search ol.search-results h3,
+.page-search ol.search-results .search-snippet-info {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032278}}
+.page-search ol.search-results .search-info {
+  font-size: 0.9em;
+  color: #C4C4C3;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032282}}
+.page-search ol.search-results .search-info a {
+  color: #C4C4C3;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032287}}
+.page-search ol.search-results li {
+  padding: 10px 0;
+  border-bottom: 1px dashed #eaeae8;
+  list-style: decimal;
+}
+
+/* =============================================================================
+ *   Tables
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032306}}
+table {
+  margin: 10px 0;
+  padding: 0;
+  width: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032311}}
+table.sticky-header {
+  z-index: 10;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032322}}
+table,
+thead,
+tbody,
+tr,
+th,
+td {
+  border-color: #cccccc;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032329}}
+table,
+td,
+th {
+  vertical-align: middle;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032336}}
+caption,
+th,
+td {
+  text-align: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032341}}
+thead tr {
+  font-weight: 700;
+  background-color: #e5e5e5;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032348}}
+td,
+th {
+  border-bottom: 0;
+  margin: 0;
+  padding: 5px 7px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032358}}
+tbody tr {
+  border-top: 1px solid #cccccc;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032363}}
+tr {
+  /* Table row striping */
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032365}}
+tr.odd {
+  background: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032372}}
+tr.info, tr.even, tr:nth-child(2n+2) {
+  border-bottom: 0;
+  background-color: whitesmoke;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032381}}
+tr.odd td.active {
+  background-color: #eeeeee;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032385}}
+tr.even td.active {
+  background-color: #ebebeb;
+}
+
+/*
+ * Forum tables
+ * Core sets white-space to nowrap, which makes no sense
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032413}}
+#forum td.created, #forum td.posts, #forum td.topics, #forum td.last-reply, #forum td.replies, #forum td.pager {
+  white-space: normal;
+}
+
+/* =============================================================================
+ *   Messages
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032424}}
+div.messages {
+  background-position: 10px 17px;
+  border: 0 none;
+  margin: 0;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032432}}
+div.messages ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/*
+ * Unpublished nodes
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032473}}
+.node-unpublished p.unpublished,
+.comment-unpublished p.unpublished {
+  color: pink;
+  color: rgba(239, 170, 170, 0.4);
+  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  text-align: center;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/_custom\.scss}line{font-family:\00003209}}
+.ie6-7 .node-unpublished p.unpublished > *, .ie6-7
+.comment-unpublished p.unpublished > * {
+  position: relative;
+}
+
+/* =============================================================================
+ *    Maintenance pages
+ * ========================================================================== */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032484}}
+.maintenance-page .container {
+  padding: 40px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032489}}
+.maintenance-page #site-name,
+.maintenance-page #page-title {
+  margin: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032496}}
+.db-offline .container {
+  margin: 0 auto;
+  padding: 40px 0;
+  width: 100%;
+  max-width: 960px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032503}}
+.db-offline div.messages {
+  margin: 20px 0 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032507}}
+.db-offline #content {
+  padding: 20px 0;
+}
+
+/* =============================================================================
+ *   Misc overrides for contrib modules
+ * ========================================================================== */
+/*
+ * Admin menu overrides
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032520}}
+#admin-menu {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Devel Module
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032529}}
+.dev-query {
+  background: #eeeeee;
+  padding: 30px;
+}
+
+/*
+ * Styleguide module tweaks
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032538}}
+#styleguide-header {
+  padding: 0 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/global\.styles\.scss}line{font-family:\000032541}}
+#styleguide-header .item-list {
+  font-family: inherit;
+  margin: 0 20px 20px 0;
+  min-height: 260px;
+  width: auto;
+}

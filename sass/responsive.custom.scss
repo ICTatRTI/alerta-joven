@@ -1,0 +1,162 @@
+
+// _base.scss imports _custom.scss and other partials.
+@import "base";
+
+
+
+@media only screen and (max-width: 481px) {
+  #site-name {
+    font-size: 36px;
+  }
+
+  .region-two-66-33-second .block {
+    margin: 0 0 10px;
+
+    .block-inner {
+      //border-top: 1px solid #BBC6D6;
+      border-left: 1px solid #BBC6D6;
+    }
+  }
+
+}
+
+
+
+@media only screen and (max-width: 655px) {
+
+  #admin-menu {display: none}
+
+  .region-leaderboard {
+    .block-user-menu,
+    #block-superfish-2 {
+      float: none;
+      border-bottom: 1px solid #86ABC9;
+    }
+  }
+
+  .region-header {
+    position: static;
+    margin: 10px 0;
+
+    .region-inner {
+      border-right: 0;
+    }
+  }
+
+  #branding {
+    margin: 5px 5px 4px 5px;
+  }
+
+  #site-name {
+    padding: 0 10px;
+  }
+
+  #site-name,
+  .region-header {
+    text-align: center;
+  }
+
+  .region-footer {
+    #block-block-1 {
+      width: auto;
+    }
+  }
+}
+
+
+
+
+@media only screen and (max-width: 679px) {
+  // Front page slideshow block
+  #block-views-slideshows-block {
+    .field-slideshow-caption {
+      position: static;
+      bottom: 0;
+      color: #fff;
+      width: 100%;
+      margin-top: -1px;
+      background: #445780;
+      @include background(linear-gradient(#383e68, #596c91));
+    }
+    .field-slideshow-caption-text {
+      line-height: 1;
+      display: block;
+      padding: 20px 20px 20px 10px;
+      font-style: italic;
+      font-weight: bold;
+    }
+  }
+
+}
+
+
+@media only screen and (min-width: 680px) {
+
+  // Front page slideshow block
+  #block-views-slideshows-block {
+    .field-slideshow-caption {
+      position: absolute;
+      bottom: 0;
+      height: 60px;
+      width: 100%;
+      background: url(images/frontpage-slideshow-caption-background-1000.png) no-repeat right top transparent;
+      color: #fff;
+    }
+    .field-slideshow-caption-text {
+      line-height: 1;
+      display: block;
+      padding: 32px 20px 0 10px;
+      font-style: italic;
+      font-weight: bold;
+    }
+  }
+
+}
+
+
+
+@media only screen and (max-width: 305px) {
+  #site-name {
+    font-size: 32px;
+    line-height: 1.1;
+    padding: 10px;
+  }
+}
+
+
+
+// Main menu
+@media only screen and (max-width: 959px) {
+  #menu-bar .sf-menu.sf-style-default a {
+   padding: 0 10px;
+   border: 0;
+  }
+}
+@media only screen and (min-width: 959px) and (max-width: 1030px) {
+  #menu-bar .sf-menu.sf-style-default a {
+
+   padding: 0 6px;
+   border: 0;
+   font-size: 0.9em;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
