@@ -1,4 +1,5 @@
--- SUBTHEME SETUP --
+SUBTHEME SETUP 
+------------
 
 NOTE: if you use Drush you can generate a new subtheme with the adaptivetheme
 command: drush adaptivetheme "Foobar Theme" foobartheme
@@ -25,5 +26,3 @@ command: drush adaptivetheme "Foobar Theme" foobartheme
 Any problems please post an issue in the Adaptivethemes issue queue on Drupal.org:
 http://drupal.org/project/issues/adaptivetheme
 
-Maintainer:
-* Jeff Burnz http://drupal.org/user/61393
