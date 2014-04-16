@@ -1,26 +1,3 @@
 
 // _base.scss imports _custom.scss and other partials.
-@import "base";
-
-/*
- * Target IE 6, 7 and 8 (less than IE9)
- */
-
-// Front page slideshow block
-#block-views-slideshows-block {
-  .field-slideshow-caption {
-    position: static;
-    bottom: 0;
-    color: #fff;
-    width: 100%;
-    margin-top: -1px;
-    background: #445780;
-  }
-  .field-slideshow-caption-text {
-    line-height: 1;
-    display: block;
-    padding: 20px 20px 20px 10px;
-    font-style: italic;
-    font-weight: bold;
-  }
-}
+//@import "base";

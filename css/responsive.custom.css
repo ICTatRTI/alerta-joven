@@ -1,143 +1,778 @@
-/*
-.color1 { color: #c4c4c3}
-.color2 { color: #f6f5f5}
-.color3 { color: #ffffff}
-.color4 { color: #248653}
-.color5 { color: #f7f6f6}
-.color6 { color: #fefdf7}
-.color7 { color: #383e68}
-.color8 { color: #288653}
-.color9 { color: #add3e7}
-.color10 { color: #86abc9}
-.color11 { color: #fafafa}
-.color12 { color: #6d87a9}
-.color13 { color: #7d92b0}
-.color14 { color: #566b91}
-.color15 { color: #445780}
-*/
-@media only screen and (max-width: 481px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\000038}}
-  #site-name {
-    font-size: 36px;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\0000312}}
-  .region-two-66-33-second .block {
-    margin: 0 0 10px;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\0000315}}
-  .region-two-66-33-second .block .block-inner {
-    border-left: 1px solid #bbc6d6;
-  }
-}
-@media only screen and (max-width: 655px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\0000327}}
-  #admin-menu {
-    display: none;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\0000331}}
-  .region-leaderboard .block-user-menu,
-  .region-leaderboard #block-superfish-2 {
-    float: none;
-    border-bottom: 1px solid #86abc9;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\0000337}}
-  .region-header {
-    position: static;
-    margin: 10px 0;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\0000341}}
-  .region-header .region-inner {
-    border-right: 0;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\0000346}}
-  #branding {
-    margin: 5px 5px 4px 5px;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\0000350}}
-  #site-name {
-    padding: 0 10px;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\0000355}}
-  #site-name,
-  .region-header {
-    text-align: center;
-  }
-
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\0000360}}
-  .region-footer #block-block-1 {
+@media only screen and (max-width: 960px) {
+	.jovens_of_the_month #block-views-jovens-of-the-month-block {
     width: auto;
-  }
 }
-@media only screen and (max-width: 679px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\0000372}}
-  #block-views-slideshows-block .field-slideshow-caption {
-    position: static;
-    bottom: 0;
-    color: #fff;
-    width: 100%;
-    margin-top: -1px;
-    background: #445780;
-    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #383e68), color-stop(100%, #596c91));
-    background: -webkit-linear-gradient(#383e68, #596c91);
-    background: -moz-linear-gradient(#383e68, #596c91);
-    background: -o-linear-gradient(#383e68, #596c91);
-    background: linear-gradient(#383e68, #596c91);
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\0000381}}
-  #block-views-slideshows-block .field-slideshow-caption-text {
-    line-height: 1.4;
-    display: block;
-    padding: 15px 10px 15px 10px;
-    font-style: italic;
-    font-weight: bold;
-  }
+.jovens_of_the_month #block-views-jovens-of-the-month-block ul {
+	 margin: auto;
+    overflow: hidden;
+    padding: inherit;
+    width: auto;
+	}
+.flexslider .slides img {
+    width: 92.3%;
+	 margin: 9px auto auto !important;
 }
-@media only screen and (min-width: 680px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\0000397}}
-  #block-views-slideshows-block .field-slideshow-caption {
+.top-logos {
+	margin-bottom: 10px;
+}
+
+#secondary-content-wrapper .flex-control-nav {
+	display: block;
+	top:85%;
+}
+#block-views-jovens-of-the-month-block ul li {
+	display: block;
+	list-style: none outside none;
+	padding: 0;
+	position: relative;
+	margin:0 12px 0 12px;
+}
+#block-views-jovens-of-the-month-block {
+	margin: 0 auto 10px;
+	text-align: center;
+	width: auto;
+}
+blockquote.image-field-caption strong{
+	font-size:22px;
+	}
+blockquote {
+    margin: 1em 0;
+}
+
+.slider_short_desc {
+    background-image: url("images/banner_text_bg.png");
+    float: left;
+    left: 50px;
+    padding: 8px;
     position: absolute;
+    top: 21%;
+    width: 272px;
+	text-align:left;
+}
+
+#secondary-content-wrapper .flexslider .slides h2 {
+    font-size: 24px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#secondary-content-wrapper .flexslider .slides p {
+    font-size: 16px;
+    margin-left: 0;
+    margin-right: 0;
+	
+}
+#secondary-content-wrapper .flexslider{
+	min-height:inherit;
+		padding-bottom:10%;
+
+	}
+	.region-footer-bottom .region-inner {
+    margin: auto;
+    padding: 26px 0 0;
+    width: 95%;
+}	
+
+#logo{
+	display:none;
+	}	
+#logo1{
+	display:block;
+	width:100%;
+	}
+#branding {
+    float: left;
+    margin: 0 0 0 20px;
+    width: 39%;
+}			
+#header-wrapper{
+	min-height:inherit;
+	}	
+.container {
+    width: 830px;
+}
+.region-jovens-of-the-month{
+	width:830px;
+	margin:auto;
+	}	
+#block-views-jovens-of-the-month-block ul li {
+    width: 29%;
+}	
+#footer-wrapper .container {
+	width:100%;
+	}
+
+#block-views-publications-block-1 {
+ margin-top:0;
+    width: 830px;
+}	
+#block-views-publications-block-1 ul li{
+width:830px;
+	
+}
+#block-views-news-block {
+
+    margin: 50px 0 15px;
+
+}
+}
+@media only screen and (max-width: 850px) {
+
+.top-logos {
+	margin-bottom: 10px;
+}
+
+#secondary-content-wrapper .flex-control-nav {
+	display: block;
+	top:85%;
+}
+#block-views-jovens-of-the-month-block ul li {
+	display: block;
+	list-style: none outside none;
+	padding: 0;
+	position: relative;
+	margin:0 12px 0 12px;
+}
+#block-views-jovens-of-the-month-block {
+	margin: 0 auto 10px;
+	text-align: center;
+	width: auto;
+}
+blockquote.image-field-caption strong{
+	font-size:22px;
+	}
+blockquote {
+    margin: 1em 0;
+}
+
+
+#secondary-content-wrapper .flexslider .slides h2 {
+    font-size: 24px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#secondary-content-wrapper .flexslider .slides p {
+    font-size: 16px;
+    margin-left: 0;
+    margin-right: 0;
+	
+}
+#secondary-content-wrapper .flexslider{
+	min-height:inherit;
+		padding-bottom:10%;
+
+	}
+	.region-footer-bottom .region-inner {
+    margin: auto;
+    padding: 26px 0 0;
+    width: 95%;
+}	
+
+#logo{
+	display:none;
+	}	
+#logo1{
+	display:block;
+	width:100%;
+	}
+.smallmode{
+	display: none;
+}
+#branding {
+    float: left;
+    margin: 0 0 0 20px;
+    width: 39%;
+}			
+#header-wrapper{
+	min-height:inherit;
+	}	
+.container {
+    width: 748px;
+}
+.region-jovens-of-the-month{
+	width:768px;
+	margin:auto;
+	}	
+#block-views-jovens-of-the-month-block ul li {
+    width: 29%;
+}	
+#footer-wrapper .container {
+	width:100%;
+	}
+
+#block-views-publications-block-1 {
+ margin-top:0;
+    width: 748px;
+}	
+#block-views-publications-block-1 ul li{
+width:748px;
+	
+}
+#block-views-news-block {
+
+    margin: 50px 0 15px;
+
+}
+}
+@media only screen and (min-width: 769px) {
+.block-superfish {
+	margin: 0 !important;
+}
+.block-superfish .block-inner {
+	margin: 0;
+}
+ul.sf-menu {
+	margin-bottom: 0;
+	text-align: right;
+}
+ul.sf-menu a {
+	color: #fff;
+	text-decoration: none;
+}
+ul.sf-menu > li {
+	margin-left: 12px !important;
+}
+ul.sf-menu > li.menuparent.sfHover,
+ul.sf-menu > li > a {
+	border: 0;
+	padding: 0 20px;
+	height: 75px;
+	line-height: 75px;
+	-webkit-border-radius: 8px 8px 0 0;
+	-moz-border-radius: 8px 8px 0 0;
+	-ms-border-radius: 8px 8px 0 0;
+	-o-border-radius: 8px 8px 0 0;
+	border-radius: 8px 8px 0 0;
+}
+ul.sf-menu > li.menuparent.sfHover:hover,
+ul.sf-menu > li > a:hover {
+	background: #566b91;
+}
+ul.sf-menu > li.sf-depth-1.sf-no-children > a {
+	height: 50px;
+	line-height: 50px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+	top: 12px;
+}
+ul.sf-menu > li.sf-depth-1.sf-no-children > a:focus,
+ul.sf-menu > li.sf-depth-1.sf-no-children > a:hover,
+ul.sf-menu > li.sf-depth-1.sf-no-children > a:active {
+	height: 50px;
+	line-height: 50px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	border-radius: 8px;
+	top: 12px;
+}
+ul.sf-menu ul {
+	background: #566b91;
+	border-bottom: 7px solid #566b91;
+}
+ul.sf-menu ul li {
+	display: block;
+}
+ul.sf-menu ul li a,
+ul.sf-menu ul li a:hover,
+ul.sf-menu ul li a:focus {
+	border-bottom: 1px solid #fff;
+	padding: 0 10px;
+	margin: 0 0;
+	display: block;
+	height: 36px;
+	line-height: 36px;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	border-radius: 0;
+}
+ul.sf-menu li:hover,
+ul.sf-menu li.sfHover {
+	outline: 0;
+}
+ul.sf-menu li > ul,
+ul.sf-menu li li > ul {
+	left: auto;
+	right: 0;
+}
+ul.sf-menu li:hover > ul,
+ul.sf-menu li.sfHover > ul {
+	left: auto;
+	right: 0;
+	top: 100%;
+}
+ul.sf-menu li li:hover > ul,
+ul.sf-menu li li.sfHover > ul {
+	right: 12em;
+	top: 0;
+}
+ul.sf-menu a:focus,
+ul.sf-menu a:hover,
+ul.sf-menu a:active {
+	outline: 0;
+}
+}
+@media only screen and (max-width: 768px) {
+
+.flexslider .slides img {
+	 margin: 8px auto auto !important;
+    width: 92%;
+}
+.top-logos {
+	margin-bottom: 10px;
+}
+#menu-bar {
+	      border: 0 none;
     bottom: 0;
-    height: 80px;
+    float: right;
+    margin-bottom: 10px;
+    margin-right: 26px;
+        margin-top: -5px;
+    min-width: 240px;
+    right: auto;
+    text-align: right;
+	
+}
+#menu-bar .block {
+	margin: 0;
+}
+.nav {
+	float: none;
+	clear: both;
+	margin: 0;
+}
+.at-menu-toggle-button-link {
+	background: url(images/toggle-icon-small.png) no-repeat transparent left center;
+	padding: 0 0 0 30px;
+	color: #fff;
+	    font-size: 18px;
+    font-style: normal;
+}
+
+#menu-bar.nav {
+    clear: none !important;
+}
+ul.sf-menu > li {
+	margin: 0 !important;
+}
+ul.sf-menu ul {
+	text-align: left;
+}
+ul.sf-menu ul li {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+ul.sf-menu a {
+	color: #fff;
+	text-decoration: none;
+}
+ul.sf-menu li,
+ul.sf-menu a {
+	line-height: 2.5em;
+}
+
+#secondary-content-wrapper .flexslider {
+background-size:100%;
+background-position:-4px top;
+	border: 0 none;
+	/*padding: 9px 26px 62px 32px;*/
+}
+#secondary-content-wrapper .flexslider .slides {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+#secondary-content-wrapper .flexslider .slides h2 {
+	margin-left: 15px;
+	margin-right: 15px;
+	font-size: 2em;
+}
+#secondary-content-wrapper .flexslider .slides p {
+	font-size: 18px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+#secondary-content-wrapper .flex-control-nav {
+	display: block;
+	top:85%;
+}
+#block-views-jovens-of-the-month-block ul li {
+	display: block;
+	list-style: none outside none;
+	padding: 0;
+	position: relative;
+	margin:0 12px 0 12px;
+}
+#block-views-jovens-of-the-month-block {
+	margin: 0 auto 10px;
+	text-align: center;
+	width: auto;
+}
+
+blockquote.image-field-caption strong{
+	font-size:22px;
+	}
+blockquote {
+    margin: 1em 0;
+}
+
+.slider_short_desc {
+    background-image: url("images/banner_text_bg.png");
+    float: left;
+    left: 50px;
+    padding: 8px;
+    position: absolute;
+    top: 15%;
+    width: 272px;
+	text-align:left;
+}
+
+#secondary-content-wrapper .flexslider .slides h2 {
+    font-size: 24px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#secondary-content-wrapper .flexslider .slides p {
+    font-size: 16px;
+    margin-left: 0;
+    margin-right: 0;
+	margin-bottom:0;
+}
+#secondary-content-wrapper .flexslider{
+	min-height:inherit;
+	padding-bottom:10%;
+	}
+	.region-footer-bottom .region-inner {
+    margin: auto;
+    padding: 26px 0 0;
+    width: 95%;
+}	
+
+#logo{
+	display:none;
+	}	
+#logo1{
+	display:block;
+	width:100%;
+}
+
+	.smallmode{
+	display:none;
+}
+#branding {
+    float: left;
+    margin: 0 0 0 20px;
+    width: 39%;
+}			
+#header-wrapper{
+	min-height:inherit;
+	}	
+.container {
+    width: 640px;
+}
+.region-jovens-of-the-month{
+	width:640px;
+	margin:auto;
+	}	
+#block-views-jovens-of-the-month-block ul li {
+    width: 29%;
+}	
+#footer-wrapper .container {
+	width:100%;
+	}
+
+#block-views-publications-block-1 {
+ margin-top:0;
+    width: 640px;
+}	
+#block-views-publications-block-1 ul li{
+width:640px;
+	
+}
+#block-views-news-block {
+
+    margin: 50px 0 15px;
+
+}
+}
+@media only screen and (max-width: 660px) {
+
+#secondary-content-wrapper .flex-control-nav {
+    display: none;
+}
+#block-views-publications-block-1,
+#block-views-news-block {
+	float: none;
+	width: 540px;
+	margin: 30px auto 0 auto;
+}
+#footer .block-search {
+	border-left: 0;
+	float: none;
+	margin: -10px 10px 10px;
+	padding: 10px 0;
+}
+#footer .block-search .form-text {
+	min-width: auto;
+}
+.field-name-body ul {
+	padding: 0 0 0 15px;
+}
+#branding {
+    float: left;
+    margin: 0;
     width: 100%;
-    background: url(images/slider-caption-1000.png) no-repeat left top transparent;
-    color: #fff;
-  }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\00003107}}
-  #block-views-slideshows-block .field-slideshow-caption-text {
-    line-height: 1.2;
+}
+#logo1 {
+    display: none;
+    width: 300px;
+	margin:auto;
+}
+.smallmode{
+	color: #FFFFFF;
+	display: block;
+	float: left;
+	padding-left: 23px;
+	padding-top: 9px;
+}
+.region-leaderboard {
+   
+    float: none;
+    margin:auto auto 10px auto;
+    width: 95%;
+}
+#secondary-content-wrapper .flexslider {
+   padding-bottom:0;
+    background-size: 100% auto;
+
+    /*padding: 8px 26px 62px 31px;*/
+}
+
+
+ .slider_short_desc {
+    width: 95%;
+	position:inherit;
+	top:8px;
+	left:12px;
+}
+
+#block-views-publications-block-1 ul li {
+    width: 520px;
+}
+#block-views-publications-block-1 li, #block-views-news-block li {
+ 
+    width: 95%;
+}
+
+#block-views-publications-block-1 li, #block-views-news-block li.views-row-1 {
+    margin-right: 0;
+}
+
+#block-views-publications-block-1, #block-views-news-block {
+    
+    padding: 0;
+}
+#header-wrapper {
+   padding:0;
+}
+.container {
+    width: 540px;
+}
+#block-views-jovens-of-the-month-block {
+ 
+    width: 540px;
+}
+#block-views-jovens-of-the-month-block ul li {
+    margin: 0 11px;
+}
+.region-jovens-of-the-month {
+
+    width: 540px;
+}
+#block-views-publications-block-1, #block-views-news-block {
+     width: 520px;
+}
+
+}
+@media only screen and (max-width: 540px) {
+	
+#branding {
+	float: none;
+	clear: both;
+	margin: 0;
+}
+.container {
+    width: 460px;
+}
+#block-views-publications-block-1, #block-views-news-block {
+    width: 100%;
+}
+
+
+#block-views-publications-block-1 ul li {
+    width: 100%;
+}
+#main-content, .block-inner, .pane-inner, .menu-wrapper, .branding-elements, .breadcrumb-wrapper, .attribution, .at-panel .rounded-corner, .block-panels-mini > .block-title, .rendered-by-ds .panel-display .region-inner, div.messages, .at-gutter {
+    margin-left: 0;
+    margin-right: 0;
+}
+#block-views-jovens-of-the-month-block .view-header h2 {
+    background-image:none;
+    background-position:inherit;
+    background-repeat:inherit;
+    color: #194277;
+    font-size: 23px;
+    margin: auto;
+    padding: 13px 0 26px;
+    width: 95%;
+
+}
+#block-views-jovens-of-the-month-block {
+    width: 480px;
+}
+.region-jovens-of-the-month {
+    width: 480px;
+}
+#block-views-jovens-of-the-month-block ul li {
+    width: 90%;
+	margin: 0 11px 17px;
+}
+.jovens_of_the_month {
+    background-repeat: repeat;
+}
+
+.item-list ul li img {
+    float: left;
+    width: 227px;
+}
+
+blockquote {
+    float: left;
+    width: 200px;
+}
+.views-field{
+	width:100%;
+	display:inline-block;
+	}
+.slider_short_desc {
+    left: 9px;
+    position: inherit;
+    top: 6px;
+    width: 95%;
+}
+#secondary-content-wrapper .flexslider .slides p {
+  margin-bottom:0;
+  font-size: 13px;
+}
+#secondary-content-wrapper .flexslider .slides h2 {
+    font-size: 20px;
+   
+}
+}
+@media only screen and (max-width: 480px) {
+.region[class*="float-blocks"] .block {
+	float: none;
+	width: 100%;
+}
+.at-menu-toggle-button-link{
+    font-size: 13px !important;
+    font-weight: normal !important;
+}
+#menu-bar{
+	margin-right:8px !important;
+	width:135px !important;
+	min-width:135px !important;
+}
+#menu-bar.nav {
+    clear: none !important;
+}
+.smallmode{
+	color: #FFFFFF;
     display: block;
-    padding: 40px 20px 0 7px;
-    font-style: italic;
-    font-weight: bold;
-    font-size: 0.96em;
-  }
+    float: left;
+    padding-left: 10px;
+    padding-top: 9px;
 }
-@media only screen and (max-width: 305px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\00003122}}
-  #site-name {
-    font-size: 32px;
-    line-height: 1.1;
-    padding: 10px;
-  }
+.region-leaderboard ul li a{
+    width: 100%;
+	font-size:14px !important;
 }
-@media only screen and (max-width: 959px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\00003133}}
-  #menu-bar .sf-menu.sf-style-default a {
-    padding: 0 10px;
-    border: 0;
-  }
+#block-views-jovens-of-the-month-block {
+    width: 320px;
 }
-@media only screen and (min-width: 959px) and (max-width: 1030px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/jmburnz\/Sites\/client\/RTI-International\/Drupal\/sites\/all\/themes\/alertajoven\/sass\/responsive\.custom\.scss}line{font-family:\00003139}}
-  #menu-bar .sf-menu.sf-style-default a {
-    padding: 0 6px;
-    border: 0;
-    font-size: 0.9em;
-  }
+.region-jovens-of-the-month {
+    width: 320px;
 }
+.container {
+    width: 320px;
+}
+.item-list ul li img {
+    float: none;
+}
+
+blockquote {
+    float: none;
+    margin: auto;
+    width: 200px;
+}
+.region-leaderboard {
+    width: 320px;
+}
+.slider_short_desc {
+     left: 7px;
+    position: inherit;
+    top: 5px;
+    width: 95%;
+}
+#secondary-content-wrapper .flexslider {
+    background-position: -2px top;
+   
+}
+.flexslider .slides img {
+    margin: 5px auto auto !important;
+}
+}
+@media only screen and (max-width: 320px) {
+.region[class*="float-blocks"] .block {
+	float: none;
+	width: 100%;
+}
+.region-leaderboard ul li a{
+    width: 100%;
+	font-size:14px !important;
+}
+#block-views-jovens-of-the-month-block {
+    width: 280px;
+}
+.region-jovens-of-the-month {
+    width: 280px;
+}
+.container {
+    width: 280px;
+}
+.item-list ul li img {
+    float: none;
+}
+
+blockquote {
+    float: none;
+    margin: auto;
+    width: 200px;
+}
+
+#logo1 {
+    
+    width: 269px;
+}
+.region-leaderboard {
+    width: 300px;
+}
+}
+

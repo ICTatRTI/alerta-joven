@@ -1,0 +1,1247 @@
+/* @file global.styles */
+/* ============================================================================= Base ========================================================================== */
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/* To preserve theme settings never apply font properties to the HTML element. This is critically important if you are using the Responsive JavaScript feature as this relies on being able to set a pseudo font family on the HTML element. If you need to set default font properties of any kind use the BODY element as these can be overridden using font theme settings. */
+html {
+	background: #f2f2f2;
+}
+body {
+font-family: 'Cabin', sans-serif;
+	font-size: 87.5%;
+	color: #333;
+}
+h1,
+h2,
+h3,
+h4 {
+	font-weight: 400;
+}
+pre,
+code,
+tt,
+samp,
+kbd,
+var {
+	font-family: Consolas, Monaco, "Courier New", Courier, monospace, sans-serif;
+}
+/* ============================================================================= Wrappers ========================================================================== */
+#tertiary-content-wrapper,
+#footer-wrapper,
+#content-wrapper,
+#header-wrapper {
+	padding: 0 10px;
+}
+/* Wraps the header */
+#header-wrapper {
+	background: #194277;
+	background: -moz-linear-gradient(top, #194277 0%, #194277 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #194277), color-stop(100%, #194277));
+	background: -webkit-linear-gradient(top, #194277 0%, #194277 100%);
+	background: -o-linear-gradient(top, #194277 0%, #194277 100%);
+	background: -ms-linear-gradient(top, #194277 0%, #194277 100%);
+	background: linear-gradient(to bottom, #194277 0%, #194277 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#194277', endColorstr='#194277', GradientType=0 );
+	min-height: 140px;
+}
+#header {
+	position: relative;
+}
+.region-leaderboard {
+	background: #164178;
+	background: -moz-linear-gradient(top, #164178 0%, #1d4276 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #164178), color-stop(100%, #1d4276));
+	background: -webkit-linear-gradient(top, #164178 0%, #1d4276 100%);
+	background: -o-linear-gradient(top, #164178 0%, #1d4276 100%);
+	background: -ms-linear-gradient(top, #164178 0%, #1d4276 100%);
+	background: linear-gradient(to bottom, #164178 0%, #1d4276 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#164178', endColorstr='#1d4276', GradientType=0 );
+float:right;
+}
+.region-leaderboard .block {
+	float: right;
+	margin: 0 10px 0 0;
+}
+.region-leaderboard .block .block-inner {
+	margin: 0;
+	padding: 0 0 2px;
+}
+.region-leaderboard .block .menu a,
+.region-leaderboard .block .block-content a,
+.region-leaderboard .block .block-content span.language-link {
+	color: #07A7D6;
+    display: inline-block;
+    font-size: 16px;
+    padding: 5px;
+	font-family: 'Cabin', sans-serif;
+}
+.region-leaderboard .block-superfish {
+	float: left;
+}
+.region-leaderboard .block ul {
+	margin: 0;
+	padding: 0;
+}
+.region-leaderboard .block ul li {
+	list-style: none;
+	margin: 0;
+	float: left;
+	padding: 0.2em 0.5em 0 0;
+}
+.region-leaderboard .block-locale {
+	margin: 0;
+}
+.region-leaderboard #block-system-user-menu {
+	float: left;
+}
+.region-leaderboard #block-system-user-menu .block-inner {
+	margin-left: 7px;
+}
+body.i18n-en .block-locale .block-content li.en a {
+	text-decoration: underline;
+}
+body.i18n-es .block-locale .block-content li.es a {
+	text-decoration: underline;
+}
+/* Wraps the secondary content/preface region */
+#secondary-content-wrapper {
+	background: url(../images/container_top.png) repeat-x scroll right 6px #fff;
+	overflow: hidden;
+}
+#content-wrapper{
+	background: url(../images/container_top.png) repeat-x scroll right 6px #fff;
+	}
+#secondary-content-wrapper .block {
+	margin: 0 auto;
+}
+#secondary-content-wrapper .flex-direction-nav {
+	display: none !important;
+}
+#secondary-content-wrapper .flex-control-nav {
+	top: 373px;
+}
+#secondary-content-wrapper .flex-control-nav a {
+	display: block !important;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	border: 0;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+	background-color: transparent;
+	width: 10px;
+	height: 10px;
+	background: url(images/slide-controls.png) no-repeat transparent right top;
+	float: left;
+	margin: 0 2px;
+}
+#secondary-content-wrapper .flex-control-nav a.active {
+	background: url(images/slide-controls.png) no-repeat transparent left top;
+}
+#secondary-content-wrapper .flexslider {
+background: url(images/slideimage-background.png) no-repeat transparent 3px top;
+background-size:100%;
+	max-width: 985px;
+	margin: 0 auto;
+	min-height: 412px;
+
+}
+.flexslider .slides img {
+
+width: 94% !important;
+}
+#secondary-content-wrapper .flexslider .slides img {
+	display: block;
+	
+/*	background: url(images/slideimage-background.png) no-repeat transparent 0 0;*/
+/*	padding: 10px 10px 150px;*/
+margin:12px auto auto auto;
+}
+#secondary-content-wrapper .flexslider .slides h2,
+#secondary-content-wrapper .flexslider .slides p {
+	color: #fff;
+}
+#secondary-content-wrapper .flexslider .slides h2 {
+	font-size: 40px;
+	margin: 30px 0 10px;
+	font-family: 'Belleza', sans-serif;
+	font-weight:normal;
+	line-height: 1.1em;
+	margin-bottom:10px !important;
+
+}
+#secondary-content-wrapper .flexslider .slides p {
+	font-size: 18px;
+	margin-left: 440px;
+	margin-right: 0;
+}
+#secondary-content-wrapper .flexslider .slides .field-slideshow-caption {
+	float: right;
+	width: 400px;
+	color: #fff;
+	font-size: 14px;
+	margin: 42px 20px 0;
+}
+#secondary-content-wrapper .container {
+	padding: 26px 0 10px;
+}
+#secondary-content-wrapper #field-slideshow-1-wrapper,
+#secondary-content-wrapper .field-slideshow,
+#secondary-content-wrapper #field-slideshow-1-controls {
+	margin: auto;
+}
+#secondary-content-wrapper #field-slideshow-1-controls {
+	text-align: center;
+}
+/* Wraps the main content column */
+.front #content-wrapper {
+	background: none !important;
+/*	background-image: url(images/lip-down.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	border-top: 1px solid #c4c4c3;*/
+}
+#columns {
+	max-width: 953px;
+	margin: auto;
+}
+#columns .breadcrumb-wrapper {
+	margin: 0 0 20px !important;
+	color: #848484;
+}
+.not-front #main-content {
+	background: #fff;
+	padding: 15px;
+	margin-top: 40px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 1px 3px 3px rgba(0, 0, 0, 0.05);
+	box-shadow: 0px 1px 3px 3px rgba(0, 0, 0, 0.05);
+}
+#block-views-jovens-of-the-month-block {
+	width: 885px;
+	margin: 0 auto 10px;
+	text-align: center;
+}
+#block-views-jovens-of-the-month-block .view-header h2 {
+	font-size: 22px;
+	margin: 0;
+	padding: 13px 0 26px 0;
+	background-image:url(images/stripe_bg.png);
+	background-position:center top;
+	background-repeat:no-repeat;
+	color:#fff;
+	font-family: 'Merriweather Sans', sans-serif;
+}
+#block-views-jovens-of-the-month-block .view-header h2 span {
+	display: block;
+	font-size: .75em;
+}
+#block-views-jovens-of-the-month-block .view-footer {
+	font-size: 1.25em;
+	padding: 20px 0 0 0;
+	clear: both;
+}
+#block-views-jovens-of-the-month-block ul {
+	margin: 0;
+	padding: 0;
+}
+
+#block-views-jovens-of-the-month-block ul li {
+ display: block;
+    float: left;
+    line-height: 18px;
+    list-style: none outside none;
+    margin: 0 3px 0 0;
+    padding: 0;
+    position: relative;
+    width: 33%;
+
+	}
+#block-views-jovens-of-the-month-block ul li .picture-frame {
+/*	background: url(images/picture-frame-circle.png) no-repeat transparent center top;*/
+	line-height:0;
+	position: absolute;
+	top: 0;
+	width: 180px;
+	z-index: 10;
+}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	cursor: pointer;
+	padding: 6px 12px 5px;
+	color: #fff;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	-ms-border-radius: 50px;
+	-o-border-radius: 50px;
+	border-radius: 50px;
+	border: 0;
+	margin-right: 4px;
+	font-size: 16px;
+	background: #383e68;
+	background: -moz-linear-gradient(top, #383e68 0%, #003773 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #383e68), color-stop(100%, #003773));
+	background: -webkit-linear-gradient(top, #383e68 0%, #003773 100%);
+	background: -o-linear-gradient(top, #383e68 0%, #003773 100%);
+	background: -ms-linear-gradient(top, #383e68 0%, #003773 100%);
+	background: linear-gradient(to bottom, #383e68 0%, #003773 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#383e68', endColorstr='#003773', GradientType=0 );
+}
+#edit-actions--2 {
+	border: 0;
+	height: 1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+}
+/* Wraps the tertiary content/postfix region */
+#tertiary-content-wrapper {
+	background: #fff;
+	background-image: url(images/lip-down.png);
+	background-repeat: no-repeat;
+	background-position: center -2px;
+	border-top: 1px solid #c4c4c3;
+	border-bottom: 1px solid #c4c4c3; /*   Original code to insert the corporate logos in the block
+<p><img alt="USAID" class="usaid-logo" src="/sites/all/themes/alertajoven/images/usaid-logo-spanish-h80.png" /><img alt="Entrena Consulting" class="entrena-logo" src="/sites/all/themes/alertajoven/images/entrena-consulting-logo-h80.png" /></p> */
+}
+#tertiary-content-wrapper .lip {
+	background-image: url(images/lip-up.png);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	height: 20px;
+}
+/* Footer wrapper */
+#footer-wrapper .container {
+	max-width: 100%;
+}
+#footer {
+	margin: 0 auto 5px auto;
+	padding: 15px 0 5px 0;
+	/*background: #f7f7f7;
+	background: -moz-linear-gradient(top, #f7f7f7 0%, #c8c6c6 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f7f7f7), color-stop(100%, #c8c6c6));
+	background: -webkit-linear-gradient(top, #f7f7f7 0%, #c8c6c6 100%);
+	background: -o-linear-gradient(top, #f7f7f7 0%, #c8c6c6 100%);
+	background: -ms-linear-gradient(top, #f7f7f7 0%, #c8c6c6 100%);
+	background: linear-gradient(to bottom, #f7f7f7 0%, #c8c6c6 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7', endColorstr='#c8c6c6', GradientType=0 );
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+border: 1px solid #d4d4d4;*/	
+	max-width:970px;
+}
+#footer .block-content a {
+	color: #194277;
+	padding: 2px 10px;
+	display: block;
+	font-size:14px;
+font-family: 'Cabin', sans-serif;
+}
+#footer .block {
+	margin: 0;
+}
+#footer .block-search {
+	float: right;
+	border-left: 1px solid #d4d4d4;
+	margin: -10px 0;
+	padding: 10px 0;
+	display:none;
+}
+#footer .block-search .form-text {
+	min-width: 200px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	border-radius: 30px;
+	border: 1px solid #d4d4d4;
+	padding: 4px 10px;
+	color: #666;
+}
+#footer .block-search #edit-actions {
+	border: 0;
+	height: 1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+}
+#footer .block-menu {
+	float: left;
+	margin-top: 0;
+}
+#footer .block-menu ul,
+#footer .block-menu li {
+	margin: 0;
+	padding: 0;
+}
+#footer .block-menu li {
+	float: left;
+	list-style: none;
+}
+.region-footer-bottom {
+	color: #194277;
+	font-size: 14px;
+	width:100%;
+	margin: 0 auto;
+	text-align: center;
+	line-height:22px;
+	border-top:16px solid #194277;
+	background-color:#F78A1E;
+	font-family: 'Cabin', sans-serif;
+}
+.region-footer-bottom .region-inner{
+	width:970px;
+	margin:auto;
+	padding:26px 0 0px 0;	
+}
+#footer-wrapper{
+	padding:0;
+
+	background-color:#fff;
+	}
+/* ============================================================================= Branding and header ========================================================================== */
+.region-header {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+.top-logos {
+	background: url("images/top-logos.png") no-repeat scroll center bottom rgba(0, 0, 0, 0);
+	float: left;
+	height: 136px;
+	margin: 0 0 -30px -4px;
+	overflow: visible;
+	position: relative;
+	width: 208px;
+	z-index: 20;
+	display:none;
+}
+/* Wraps all the branding elements, logo, name and slogan */
+#branding {
+	float: left;
+	margin: 0 0 0 16px;
+}
+/* Logo */
+#logo {
+	padding: 0 0;
+}
+#logo img {
+	vertical-align: bottom;
+}
+/* Wrapper for the site name and slogan (hgroup) */
+/* Site name (h1) */
+#site-name {
+	margin: 0;
+}
+#site-name a:link,
+#site-name a:visited {
+	text-decoration: none;
+}
+#site-name a:hover,
+#site-name a:focus {
+	text-decoration: underline;
+}
+/* Site slogan (h2) */
+#site-slogan {
+	margin: 0;
+}
+/* ============================================================================= Top Bar ========================================================================== */
+#block-block-5 {
+	margin-top: 4px;
+}
+#block-block-5 .content ul li {
+	padding: 0 3px;
+}
+#block-block-5 .content ul li a {
+	display: block;
+	width: 26px;
+	height: 24px;
+	display: block !important;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	border: 0;
+	font: 0/0 a;
+	text-shadow: none;
+	color: transparent;
+	background-color: transparent;
+	background-image: url(images/sn-sprite.png);
+	background-repeat: none;
+}
+#block-block-5 .content ul li.instagram a {
+	background-position: 26px 0;
+}
+#block-block-5 .content ul li.facebook a {
+	background-position: -1px 0;
+}
+#block-block-5 .content ul li.youtube a {
+	background-position: -30px 0;
+}
+/* ============================================================================= Join us links ========================================================================== */
+#block-block-6 {
+	margin-bottom: 30px !important;
+	padding-left: 50px;
+	display: none;
+}
+#block-block-6 .block-content a {
+	display: block;
+	background: #4c4b4c;
+	background: -moz-linear-gradient(top, #4c4b4c 0%, #303131 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4c4b4c), color-stop(100%, #303131));
+	background: -webkit-linear-gradient(top, #4c4b4c 0%, #303131 100%);
+	background: -o-linear-gradient(top, #4c4b4c 0%, #303131 100%);
+	background: -ms-linear-gradient(top, #4c4b4c 0%, #303131 100%);
+	background: linear-gradient(to bottom, #4c4b4c 0%, #303131 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4c4b4c', endColorstr='#303131', GradientType=0 );
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	color: #fff;
+	float: left;
+	padding: 3px 12px;
+	margin-right: 10px;
+	font-size: 16px;
+}
+/* ============================================================================= Page content header ========================================================================== */
+/* The main page title (h1) */
+#page-title {
+	margin: 0;
+	color: #194277 !important;
+}
+/* ============================================================================= Misc Global Styles ========================================================================== */
+/* Aggregator feed source */
+#aggregator .feed-source .feed-icon {
+	display: inline;
+	float: none;
+	margin-right: 10px;
+}
+.feed-details dt,
+.feed-details dd {
+	display: inline;
+	margin: 0;
+}
+/* Generic styles for links. See the ul.links declaration in node and comment stylesheets */
+ul.links {
+	margin: 0;
+	padding: 0;
+}
+ul.links.inline {
+	display: block;
+}
+ul.links li {
+	display: inline;
+	list-style: none;
+	padding: 0 10px 0 0;
+}
+/* Search results are an ordered list so reset the margin */
+.search-results {
+	margin: 0;
+	padding: 0;
+}
+/* ============================================================================= Regions ========================================================================== */
+/* Standard region wrapper, don't add width to any regions, you will bork the layout - no margin, padding or borders etc */
+/* ============================================================================= Links ========================================================================== */
+a {
+	text-decoration: none;
+	color: #445780;
+}
+a:hover,
+a:focus {
+	text-decoration: underline;
+}
+/* ============================================================================= Primary, Secondary and Menu Bar region menus ========================================================================== */
+/* Use one of the following id's for granular control: - #menu-bar (menu bar region) - #primary-menu (main menu) - #secondary-menu (secondary/user menu) You can target all of these with .nav or div[id$="menu-bar"] */
+#menu-bar {
+	border: 0 none;
+	bottom: -6px;
+	right: 0;
+	margin-top: 23px;
+	min-width: 380px;
+}
+
+.nav {
+	clear: none;
+	float: right;
+	margin: 0;
+}
+.nav ul,
+.nav ul.menu {
+	margin: 0;
+	padding: 0;
+}
+/* Superfish blocks */
+.block-superfish ul {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.block-superfish li {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+/* ============================================================================= Menu Toggles ========================================================================== */
+.at-mt .at-menu-toggle,
+.at-mt .at-menu-toggle ul,
+.at-mt .at-menu-toggle ul.menu {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+}
+.at-mt .at-menu-toggle-button {
+	margin: 0;
+}
+.at-mt .at-menu-toggle ul a {
+	padding: 0 10px;
+	white-space: nowrap;
+	font-size:15px;
+			font-family: 'Cabin', sans-serif;
+
+}
+/* ============================================================================= Menus, usually blocks ========================================================================== */
+ul.menu {
+	padding-left: 15px;
+}
+ul.menu ul {
+	padding-left: 15px;
+}
+ul.menu li {
+	margin: 0;
+}
+/* If li.content exists it's a problem, so reset the padding */
+.block .menu li.content {
+	padding: 0;
+}
+/* ============================================================================= Book navigation menu ========================================================================== */
+.book-navigation .page-up { /* Prevent text wrapping to a new line, assumes English "up" is used (two characters) */
+	min-width: 2em;
+	white-space: nowrap;
+}
+.book-navigation .menu {
+	margin-left: 0;
+}
+/* ============================================================================= Breadcrumbs ========================================================================== */
+#breadcrumb {
+	margin: 10px 0; /* If the label is set to show in theme settings the label class is added */
+}
+#breadcrumb .breadcrumb-label {
+	font-size: 1em;
+	display: inline;
+	padding-right: 10px;
+	color: #194277 !important;
+}
+#breadcrumb .breadcrumb-label:after {
+	content: ":";
+}
+#breadcrumb ol {
+	margin: 0;
+	padding: 0;
+}
+#breadcrumb .with-breadcrumb-label ol {
+	display: inline;
+}
+#breadcrumb li {
+	list-style: none;
+	display: inline;
+}
+/* ============================================================================= Pagers ========================================================================== */
+ul.pager {
+	clear: both;
+	margin: 0;
+	text-align: center;
+}
+.item-list ul.pager li {
+	margin: 0;
+}
+ul.pager li {
+	background-image: none;
+	display: inline;
+	list-style-type: none;
+	padding: .5em;
+}
+ul.pager li.pager-current {
+	font-weight: 700;
+}
+.block ul.pager li {
+	margin: 0;
+}
+/* ============================================================================= Skip Navigation ========================================================================== */
+#skip-link {
+	left: 50%;
+	margin-left: -6.5em;
+	margin-top: 0;
+	padding: 0 0.5em;
+	position: absolute;
+	width: 12em;
+	z-index: 50;
+}
+#skip-link a {
+	background: #444;
+	background: rgba(0, 0, 0, 0.6);
+	color: #f2f2f2;
+	display: block;
+	line-height: 2;
+	padding: 0;
+	text-align: center;
+	text-decoration: none;
+}
+#skip-link a:link,
+#skip-link a:visited {
+	background: #444;
+	background: rgba(0, 0, 0, 0.6);
+	color: #f2f2f2;
+	display: block;
+	line-height: 2;
+	padding: 0;
+	text-align: center;
+	text-decoration: none;
+}
+#skip-link a:hover,
+#skip-link a:focus,
+#skip-link a:active {
+	outline: 0;
+}
+/* ============================================================================= Tabs (local tasks) ========================================================================== */
+#tasks {
+	margin-bottom: 15px;
+}
+ul.primary {
+	border-bottom-color: #cccccc;
+	margin: 20px 0;
+	padding: 0 0 0 5px;
+}
+ul.primary li {
+	display: block;
+	float: left;
+	margin: 0 1px -1px;
+}
+ul.primary li a {
+	background-color: whitesmoke;
+	border-color: #cccccc;
+	margin-right: 1px;
+	padding: 0 10px;
+	display: block;
+	float: left;
+	height: 1.5em;
+	line-height: 1.5em;
+}
+ul.primary li a:hover,
+ul.primary li a:focus {
+	background-color: #eeeeee;
+	border-color: #cccccc;
+}
+ul.primary li.active a,
+ul.primary li.active a:hover,
+ul.primary li.active a:focus {
+	background-color: #f2f2f2;
+	border-bottom-color: #f2f2f2;
+}
+ul.secondary {
+	border-bottom: 1px solid #cccccc;
+	margin: 1em 0 0;
+	padding: 0 .3em 1em;
+}
+ul.secondary li {
+	border-right: 0;
+	list-style: none;
+	padding: 0 10px 0 0;
+}
+ul.secondary li a:hover,
+ul.secondary li a.active {
+	border-bottom: none;
+	text-decoration: underline;
+}
+/* ============================================================================= Action links ========================================================================== */
+ul.action-links {
+	margin: 20px 0 0;
+	list-style: none;
+}
+/* ============================================================================= Field Styling ========================================================================== */
+/* When labels are set to inline in field display settings the clearfix class is automatically added */
+.field-label-inline { /* Remove the margin on inline field lables to preserve vertical formatting */
+}
+.field-label-inline .field-label {
+	margin: 0;
+}
+/* Labels are h2 in Adaptivetheme. Use a strong selector to mitigate unwanted ineritance issues */
+.field-label {
+	font-size: 1em;
+	font-weight: 700;
+	font-family: inherit;
+	line-height: inherit;
+	margin-bottom: 0;
+}
+/* Taxonomy */
+.field-type-taxonomy-term-reference { /* The same bottom margin as p, blockquote, ul, ol and dl */
+	margin-bottom: 1.5em;
+}
+.field-type-taxonomy-term-reference.field-label-inline .field-items {
+	margin: 0;
+	padding: 0;
+}
+.field-type-taxonomy-term-reference.field-label-inline .field-item {
+	display: inline;
+	list-style: none;
+	padding: 0 10px 0 0;
+}
+/* Float left setting */
+.ia-l .field-type-image figure,
+.iat-l .field-type-image figure {
+	margin: 5px 20px 15px 0;
+}
+/* Centered setting */
+.ia-c .field-type-image figure,
+.iat-c .field-type-image figure {
+	margin: 5px auto 15px;
+}
+/* Float right setting */
+.ia-r .field-type-image figure,
+.iat-r .field-type-image figure {
+	margin: 5px 0 15px 20px;
+}
+/* ============================================================================= Block Styling ========================================================================== */
+/* Main wrapper for most blocks, block_system_main does not have it */
+.block {
+	margin-bottom: 20px;
+}
+/* Block title */
+.block-title {
+	margin: 0;
+	font-weight: 400;
+}
+/* Match item list and block menu margin and padding */
+.block-content ul,
+.block-content ol {
+	padding: 0 0 0 15px;
+}
+.block-content li {
+	margin: 0;
+	padding: 0;
+}
+#block-views-slideshows-block .block-inner {
+	margin: 0;
+}
+#block-block-4 {
+	text-align: center;
+	margin: 40px 0;
+}
+#block-block-4 p {
+	margin: 0;
+	padding: 0;
+	line-height: 0;
+}
+#block-views-publications-block-1
+{
+ float: left;
+    margin: 15px 0 0;
+    padding: 0 9px 0;
+    width: 288px;	}
+#block-views-news-block {
+	width: 608px;
+	float: left;
+    margin: 15px 0 40px 13px;
+
+/*	
+	padding: 20px;
+background: #fff;
+border: 1px solid #c4c4c3;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0px 1px 4px 4px rgba(0, 0, 0, 0.08);
+	box-shadow: inset 0px 1px 4px 4px rgba(0, 0, 0, 0.08);*/
+}
+#block-views-publications-block-1 .block-title,
+#block-views-news-block .block-title {
+	margin-bottom: 20px;
+	font-family: 'Merriweather Sans', sans-serif;
+}
+#block-views-publications-block-1 ul,
+#block-views-publications-block-1 li,
+#block-views-news-block ul,
+#block-views-news-block li {
+	margin: 0;
+	padding: 0;
+}
+#block-views-publications-block-1 li,
+#block-views-news-block li {
+	list-style: 0;
+	width:286px;
+	float:left;
+	list-style:none;
+	margin-bottom:12px;
+	padding-bottom:12px;
+
+}
+.view-publications .item-list li{
+	border-bottom:1px solid #00a2ff;	
+	}
+.view-publications .item-list li.views-row-3{
+	border-bottom:none;	
+	}	
+#block-views-publications-block-1 li, #block-views-news-block li.views-row-1 {
+    margin-right: 21px;
+}
+#block-views-publications-block-1 .view-content,
+#block-views-news-block .view-content {
+/*	overflow-y: scroll;*/
+	text-align: left;
+
+}
+#block-views-publications-block-1 .item-list,
+#block-views-news-block .item-list {
+	padding-right: 15px;
+}
+#block-views-publications-block-1 {
+	float: right;
+}
+/* ============================================================================= Node Styling ========================================================================== */
+.node {
+	margin-bottom: 20px;
+}
+.node .node-title {
+	margin: 0;
+}
+/* ============================================================================= Comment Styling - Comments, comment wrapper, comment form ========================================================================== */
+/* Wrapper for the list of comments and its titles */
+#comments {
+	margin: 1.5em 0;
+}
+#comments h2.comment-title {
+	margin: 0;
+}
+#comments h2.comment-form {
+	margin: 0;
+}
+/* Wrapper for a single comment */
+.comment {
+	margin-bottom: 20px;
+}
+/* Comment title */
+.comment-title {
+	margin: 0;
+}
+/* "New" marker for comments that are new for the current user */
+.new {
+	color: #cc0000;
+}
+/* Nested comments are indented */
+.indented {
+	margin-left: 40px;
+}
+/* ============================================================================= Forms ========================================================================== */
+/* Wrapper for a form element (or group of form elements) and its label */
+.form-item input.error,
+.form-item textarea.error,
+.form-item select.error {
+	border: 1px solid #cc0000;
+}
+.form-item label {
+	font-weight: 700;
+}
+.form-item .description {
+	font-size: 0.85em;
+}
+/* Highlight marks and form required mark */
+.marker,
+.form-required {
+	color: #cc0000;
+}
+.container-inline div,
+.container-inline label {
+	display: inline;
+}
+/* Define consistent borders */
+fieldset {
+	border: 1px solid #cccccc;
+}
+/* Tips for Drupal's input formats */
+.tips {
+	font-size: 0.9em;
+}
+/* Buttons used by contrib modules like Media */
+a.button {
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	appearance: button;
+}
+/* Password confirmation */
+.password-parent,
+.confirm-parent {
+	margin: 0;
+}
+/* ============================================================================= Tables ========================================================================== */
+table {
+	margin: 10px 0;
+	padding: 0;
+	width: 100%;
+}
+table.sticky-header {
+	z-index: 10;
+}
+table,
+thead,
+tbody,
+tr,
+th,
+td {
+	border-color: #cccccc;
+}
+table,
+td,
+th {
+	vertical-align: middle;
+}
+caption,
+th,
+td {
+	text-align: left;
+}
+thead tr {
+	font-weight: 700;
+	background-color: #e5e5e5;
+}
+td,
+th {
+	border-bottom: 0;
+	margin: 0;
+	padding: 5px 7px;
+}
+tbody tr {
+	border-top: 1px solid #cccccc;
+}
+tr { /* Table row striping */
+}
+tr.odd {
+	background: #f2f2f2;
+}
+tr.info,
+tr.even,
+tr:nth-child(2n+2) {
+	border-bottom: 0;
+	background-color: whitesmoke;
+}
+tr.odd td.active {
+	background-color: #eeeeee;
+}
+tr.even td.active {
+	background-color: #ebebeb;
+}
+/* Forum tables Core sets white-space to nowrap, which makes no sense */
+#forum td.created,
+#forum td.posts,
+#forum td.topics,
+#forum td.last-reply,
+#forum td.replies,
+#forum td.pager {
+	white-space: normal;
+}
+/* ============================================================================= Messages ========================================================================== */
+div.messages {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+div.messages ul {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.node-unpublished p.unpublished,
+.comment-unpublished p.unpublished {
+	color: pink;
+	color: rgba(239, 170, 170, 0.4);
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans-serif;
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 1.2;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	overflow: visible;
+	text-align: center;
+	text-transform: uppercase;
+	word-wrap: break-word;
+}
+.ie6-7 .node-unpublished p.unpublished > *,
+.ie6-7 .comment-unpublished p.unpublished > * {
+	position: relative;
+}
+/* ============================================================================= Maintenance pages ========================================================================== */
+.maintenance-page .container {
+	padding: 40px 0;
+}
+.maintenance-page #site-name,
+.maintenance-page #page-title {
+	margin: 0;
+}
+.db-offline .container {
+	margin: 0 auto;
+	padding: 40px 0;
+	width: 100%;
+	max-width: 960px;
+}
+.db-offline div.messages {
+	margin: 20px 0 0;
+}
+.db-offline #content {
+	padding: 20px 0;
+}
+/* ============================================================================= Misc overrides for contrib modules ========================================================================== */
+/* Admin menu overrides */
+#admin-menu {
+	margin: 0;
+	padding: 0;
+}
+/* Devel Module */
+.dev-query {
+	background: #eeeeee;
+	padding: 30px;
+}
+/* Styleguide module tweaks */
+#styleguide-header {
+	padding: 0 10px;
+}
+#styleguide-header .item-list {
+	font-family: inherit;
+	margin: 0 20px 20px 0;
+	min-height: 260px;
+	width: auto;
+}
+
+ul.sf-menu > li.menuparent.sfHover:hover, ul.sf-menu > li > a:hover {
+	background: none repeat scroll 0 0 #F78A1E !important;
+	}
+li.active-trail > a{
+	background: none repeat scroll 0 0 #F78A1E !important;
+}
+.item-list ul li img{
+	border: 10px solid #a4eaf3;
+	width:300px;
+	height:auto;
+ 
+ 	}	
+.slider_short_desc{
+	background-image:url(images/banner_text_bg.png);
+    float: left;
+    left: 60px;
+    padding: 30px;
+    position: absolute;
+    top: 27px;
+    width: 342px;
+	}	
+	
+#secondary-content-wrapper .flexslider .slides p{
+	margin-left:0;
+	font-family: 'Cabin', sans-serif;
+	}	
+.slider_short_desc h2{
+	margin:0 !important;
+	font-size:46px;
+	}	
+.slider_short_desc p{
+	font-size:18px;
+	line-height:20px;
+	}	
+.slider_short_desc a{
+	color:#00c5ff;
+	}	
+.jovens_of_the_month{
+	background-image:url(images/jovens_bg.jpg);
+	background-repeat:repeat-x;
+	}	
+	
+#content-wrapper{
+	padding:0 !important;
+	}	
+blockquote.image-field-caption strong{
+	width:100%;
+	font-size:24px;
+	color:#194277;
+	 display: inline-block;
+ 		font-family: 'Cabin', sans-serif;
+
+	}	
+blockquote.image-field-caption span{
+	width:100%;
+	font-size:18px;
+	color:#194277;
+	font-family: 'Cabin', sans-serif;
+
+	}		
+#logo1{
+	display:none;
+	}	
+.smallmode{
+	display:none;
+}
+.field-content a{
+	color: #194277;
+	font-family: 'Cabin', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+	}	
+a.views-more-link{
+	color: #00A2FF;
+    font-size: 17px;
+    font-weight: normal;
+    text-decoration: underline;
+	text-transform:uppercase;
+}	
+.views-field-body .field-content p{
+	margin-bottom:1px;
+	font-size:16px;
+	color:#284f80;
+	line-height: 22px;
+	font-family: 'Cabin', sans-serif;
+
+	}	
+h2.block-title{
+	font-size:25px;
+	color:#194277;
+	font-weight:bold;
+	font-style:italic;	
+	}	
+#block-views-jovens-of-the-month-block	img{
+	border:10px solid #fff;
+	}
+.jovens_of_the_month #block-views-jovens-of-the-month-block{
+	 width: 1140px;
+	}
+.jovens_of_the_month #block-views-jovens-of-the-month-block ul{
+margin: auto;
+    overflow: hidden;
+    padding: 0 0 0 25px;
+    width: 978px;
+	}	
+.jovens_of_the_month #block-views-jovens-of-the-month-block ul li.last {
+	margin-right:0;
+}
+.lang-en .view-jovens-of-the-month .view-header h2{
+	font-size:20px !important;
+}
+#block-system-user-menu {
+    margin-right: 0 !important;
+}
+.node-content{
+	color: #194277 !important;
+}

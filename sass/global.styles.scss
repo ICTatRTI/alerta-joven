@@ -5,31 +5,16 @@
 /*
  * @file
  * global.styles
- *
- * Styles you add here will load for all device sizes, they are "global", as
- * opposed to "responsive" styles, which only load for a given breakpoint (media
- * query) that you set in theme settings. See the README for more details.
- *
- *
- * How to use this file:
- * --------------------
- *
- * There are many empty selectors and some basic styles to act as a guide.
- * Nothing is set in stone and you can change anything - even delete all of it
- * and start with your own clean slate.
- *
- * To FORCE PRINT all selectors you can search and replace a single { (opening
- * curly brace) and insert an empty comment. This is very useful in conjuction
- * with FireSass: https://addons.mozilla.org/en-US/firefox/addon/firesass-for-firebug/
- *
- * See global.base also which includes normalize.css and some additional
- * helper classes and base styles.
  */
 
 /* =============================================================================
  *   Base
  * ========================================================================== */
-
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 /*
  * To preserve theme settings never apply font properties to the HTML element.
  * This is critically important if you are using the Responsive JavaScript
@@ -39,73 +24,21 @@
  */
 
 html {
-  background: #c4c4c3;
+  background: $page;
 }
 
 body {
   font-family: $sans-serif-small; // Set from _custom.scss font variables
   font-size: 87.5%;
-  color: #4e4e4e;
+  color: #333;
 }
 
 
-/* =============================================================================
- *   HTML Elements
- * ========================================================================== */
 
-h1 {}
-
-h2 {}
-
-h3 {}
-
-h4 {}
-
-h5 {}
-
-h6 {}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4 {
   font-weight: 400;
 }
 
-p {}
-
-b,
-strong {}
-
-i,
-em {}
-
-dfn {}
-
-sup {}
-sub {}
-
-del {}
-ins {}
-
-blockquote {}
-cite {}
-q {}
-
-address {}
-
-ul {}
-ol {}
-li {}
-
-dl {}
-dd {}
-dt {}
-
-abbr {}
-acronym {}
 
 pre,
 code,
@@ -118,139 +51,494 @@ var {
 
 
 /* =============================================================================
- *   Links
+ *   Wrappers
  * ========================================================================== */
 
-a {
-  text-decoration: none;
-  color: $link;
-
-  &:link,
-  &:visited {}
-
-  &:active,
-  &.active {}
-
-  &:hover,
-  &:focus {
-    text-decoration: underline;
-  }
+#tertiary-content-wrapper,
+#footer-wrapper,
+#content-wrapper,
+#header-wrapper {
+ padding: 0 10px;
 }
 
 
-.node,
-.at-panel,
-.sidebar {
-  a {
-    @include transition-property(all);
-    @include transition-duration(.15s);
-    @include transition-timing-function(ease-in);
-    &:hover,
-    &:focus {
-      text-decoration: none;
-      color: #C00430;
+
+
+/*
+ * Wraps the header
+ */
+#header-wrapper {
+  background: #383e68;
+  background: -moz-linear-gradient(top,  #383e68 0%, #003773 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#383e68), color-stop(100%,#003773));
+  background: -webkit-linear-gradient(top,  #383e68 0%,#003773 100%);
+  background: -o-linear-gradient(top,  #383e68 0%,#003773 100%);
+  background: -ms-linear-gradient(top,  #383e68 0%,#003773 100%);
+  background: linear-gradient(to bottom,  #383e68 0%,#003773 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383e68', endColorstr='#003773',GradientType=0 );
+
+  min-height: 144px;
+}
+
+
+
+#header {
+  position: relative;
+}
+
+
+.region-leaderboard {
+  background: #164178;
+  background: -moz-linear-gradient(top,  #164178 0%, #1d4276 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#164178), color-stop(100%,#1d4276));
+  background: -webkit-linear-gradient(top,  #164178 0%,#1d4276 100%);
+  background: -o-linear-gradient(top,  #164178 0%,#1d4276 100%);
+  background: -ms-linear-gradient(top,  #164178 0%,#1d4276 100%);
+  background: linear-gradient(to bottom,  #164178 0%,#1d4276 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#164178', endColorstr='#1d4276',GradientType=0 );
+
+
+  .block {
+    float: right;
+    margin: 0 10px 0 0;
+
+    .block-inner {
+      margin: 0;
+      padding: 0 0 2px;
+    }
+
+    .menu a,
+    .block-content a,
+    .block-content span.language-link {
+      color: #add3e7;
+      display: inline-block;
+      padding: 5px;
+    }
+
+    .block-content li {
+      &:active a,
+      &.active a {
+        //text-decoration: underline;
+      }
+    }
+  }
+
+  .block-superfish {
+    float: left;
+  }
+
+  .block {
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        list-style: none;
+        margin: 0;
+        float: left;
+        padding: 0.2em 0.5em 0 0;
+      }
+    }
+  }
+
+  .block-locale {
+    margin: 0;
+  }
+
+  #block-system-user-menu {
+    float: left;
+
+    .block-inner {
+      margin-left: 7px;
     }
   }
 }
 
 
-/* =============================================================================
- *   Wrappers
- * ========================================================================== */
+
+
+// This is mad, but local seems to put active class on both links? Not sure what is going on.
+body.i18n-en {
+  .block-locale .block-content li.en a {
+    text-decoration: underline;
+  }
+}
+body.i18n-es {
+  .block-locale .block-content li.es a {
+    text-decoration: underline;
+  }
+}
+
+
 
 /*
- * Outer wrappers:
- * - #page-wrapper: body > #page-wrapper
- * - #page: body > #page-wrapper > #page
- * - .container: body > #page-wrapper > #page.container
- *
- * The .container class holds the page width value from theme settings. You can
- * style the .container class but do not add width such as border, padding,
- * margins etc.
+ * Wraps the secondary content/preface region
  */
+#secondary-content-wrapper {
 
-#page-wrapper {}
-
-
-#page  {
   background: #fff;
+  overflow: hidden;
 
-  &.container {}
-}
+  .block {
+    margin: 0 auto;
+  }
 
+  .flex-direction-nav {
+    display: none !important;
+  }
 
-/*
- * Wraps all header elements - branding and .region-header
- */
-#header {
-  position: relative;
-  border-top: 4px solid #383E68;
-  border-bottom: 4px solid #383E68;
-  //min-height: 95px
-}
+  .flex-control-nav {
+    bottom: -2px;
 
+    a {
+      @include ir;
+      width: 10px;
+      height: 10px;
+      background: url(images/slide-controls.png) no-repeat transparent right top;
 
-/*
- * Wraps the sidebars the content column
- */
-#columns {}
+      float: left;
+      margin: 0 2px;
 
-
-/*
- * Main content column wrapper
- */
-#content-column {}
-
-
-/*
- * Wraps the main-content-header, the content region and feed-icons. Use this
- * wrapper to style the entire main content column
- */
-#main-content {}
+      &.active {
+      background: url(images/slide-controls.png) no-repeat transparent left top;
+      }
+    }
+  }
 
 
-/*
- * Wraps the content region, avoid applying styles to this wrapper, its used
- * mainly for position and invisible gutters and can be problematic to style
- */
-#content {}
+  .flexslider {
+    background: url(images/slideshow-background.png) no-repeat transparent center top;
+    max-width: 960px;
+    margin: 0 auto;
+    min-height: 392px;
+
+    .slides {
+
+      img {
+        display: block;
+        float: left;
+        padding: 10px;
+        background: url(images/slideimage-background.png) no-repeat transparent 0 0;
+        padding: 10px 10px 20px;
+        margin: 42px 30px 0;
+      }
+
+      h2, p {
+        color: #fff;
+      }
+
+      h2 {
+        font-size: 40px;
+        margin: 30px 0 10px;
+      }
+
+      p {
+        font-size: 18px;
+        margin-left: 440px;
+        margin-right: 50px;
+      }
+
+      .field-slideshow-caption {
+        float: right;
+        width: 400px;
+        color: #fff;
+        font-size: 14px;
+        margin: 42px 20px 0;
+      }
+    }
 
 
-/*
- * Footer wrapper
- */
-#footer {
-  background: url(images/footer-background.png) no-repeat center top #3b426c;
-  color: #fff;
-  font-size: 0.9em;
-  min-height: 100px;
-  padding: 70px 0 20px;
-  margin-top: 60px;
-}
+  }
 
-.front {
-  #footer {
-    margin-top: 10px;
+
+  .container {
+    padding: 40px 0 10px;
+  }
+
+  #field-slideshow-1-wrapper,
+  .field-slideshow,
+  #field-slideshow-1-controls {
+    margin: auto;
+    //max-width: 960px;
+  }
+
+  #field-slideshow-1-controls {
+    text-align: center;
   }
 }
 
 
 /*
- * Panels may need additional margin wrangling when in the $content region
+ * Wraps the main content column
  */
-#content .panel-display {}
+.front #content-wrapper {
+  background-image: url(images/lip-down.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  border-top: 1px solid #c4c4c3;
+
+  .container {}
+}
+
+
+
+
+#columns {
+  max-width: 980px;
+  margin: auto;
+
+
+  .breadcrumb-wrapper {
+    margin: 0 0 20px !important;
+    color: #848484;
+  }
+}
+
+
+.not-front #main-content {
+  background: #fff;
+  padding: 15px;
+  margin-top: 40px;
+  @include border-radius(10px);
+  -webkit-box-shadow: 0px 1px 3px 3px rgba(0, 0, 0, .05);
+  box-shadow: 0px 1px 3px 3px rgba(0, 0, 0, .05);
+}
+
+
+
+
+#block-views-jovens-of-the-month-block {
+  width: 750px;
+  margin: 40px auto 10px;
+  text-align: center;
+
+
+  .view-header h2 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0 0 20px;
+
+    span {
+      display: block;
+      font-size: .75em;
+    }
+  }
+
+  .view-footer {
+    font-size: 1.25em;
+    padding: 20px 0 0 0;
+    clear: both;
+  }
+
+  ul {
+
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      margin: 0 35px;
+      padding: 0;
+      display: block;
+      float: left;
+      position: relative;
+      width: 180px;
+      height: 180px;
+
+      .picture-frame {
+        background: url(images/picture-frame-circle.png) no-repeat transparent center top;
+        height: 180px;
+        position: absolute;
+        top: 0;
+        width: 180px;
+        z-index: 10;
+      }
+
+    }
+
+  }
+
+}
+
+
+
+
+
+
+
+
+button, input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  cursor: pointer;
+
+  padding: 6px 12px 5px;
+  color: #fff;
+  @include border-radius(50px);
+  border: 0;
+  margin-right: 4px;
+  font-size: 16px;
+
+  background: #383e68;
+  background: -moz-linear-gradient(top,  #383e68 0%, #003773 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#383e68), color-stop(100%,#003773));
+  background: -webkit-linear-gradient(top,  #383e68 0%,#003773 100%);
+  background: -o-linear-gradient(top,  #383e68 0%,#003773 100%);
+  background: -ms-linear-gradient(top,  #383e68 0%,#003773 100%);
+  background: linear-gradient(to bottom,  #383e68 0%,#003773 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#383e68', endColorstr='#003773',GradientType=0 );
+}
+
+
+#edit-actions--2 {
+  @include element-invisible;
+}
+
+
+
+/*
+ * Wraps the tertiary content/postfix region
+ */
+#tertiary-content-wrapper {
+
+  background: #fff;
+  background-image: url(images/lip-down.png);
+  background-repeat: no-repeat;
+  background-position: center -2px;
+  border-top: 1px solid #c4c4c3;
+  border-bottom: 1px solid #c4c4c3;
+
+  .lip {
+    background-image: url(images/lip-up.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 20px;
+  }
+
+  .container {}
+
+
+/*   Original code to insert the corporate logos in the block
+<p><img alt="USAID" class="usaid-logo" src="/sites/all/themes/alertajoven/images/usaid-logo-spanish-h80.png" /><img alt="Entrena Consulting" class="entrena-logo" src="/sites/all/themes/alertajoven/images/entrena-consulting-logo-h80.png" /></p> */
+}
+
+
+/*
+ * Footer wrapper
+ */
+#footer-wrapper {
+  .container {
+    max-width: 970px;
+  }
+}
+
+// The actual footer
+#footer {
+
+  margin: 30px 0;
+  padding: 10px 0;
+
+  background: #f7f7f7;
+  background: -moz-linear-gradient(top,  #f7f7f7 0%, #c8c6c6 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#c8c6c6));
+  background: -webkit-linear-gradient(top,  #f7f7f7 0%,#c8c6c6 100%);
+  background: -o-linear-gradient(top,  #f7f7f7 0%,#c8c6c6 100%);
+  background: -ms-linear-gradient(top,  #f7f7f7 0%,#c8c6c6 100%);
+  background: linear-gradient(to bottom,  #f7f7f7 0%,#c8c6c6 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#c8c6c6',GradientType=0 );
+
+  @include border-radius(10px);
+  border: 1px solid #d4d4d4;
+
+
+  .block-content a {
+    color: #333;
+    padding: 2px 10px;
+    display: block;
+  }
+
+
+  .block {
+    margin: 0;
+  }
+
+  .block-search {
+    float: right;
+    border-left: 1px solid #d4d4d4;
+    margin: -10px 0;
+    padding: 10px 0;
+
+    .form-text {
+      min-width: 200px;
+      @include border-radius(30px);
+      border: 1px solid #d4d4d4;
+      padding: 4px 10px;
+      color: #666;
+    }
+
+    #edit-actions {
+      @include element-invisible;
+    }
+  }
+
+  .block-menu {
+
+    float: left;
+    margin-top: 0;
+
+    ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      float: left;
+      list-style: none;
+    }
+
+  }
+}
+
+// USAID message at the bottom of the page
+.region-footer-bottom {
+  color: #747474;
+  font-size: 0.833em;
+  max-width: 780px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.2;
+}
 
 
 
 /* =============================================================================
- *   Branding
+ *   Branding and header
  * ========================================================================== */
+
+
+.region-header {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+
+.top-logos {
+  background: url("images/top-logos.png") no-repeat scroll center bottom rgba(0, 0, 0, 0);
+  float: left;
+  height: 136px;
+  margin: 0 0 -30px -4px;
+  overflow: visible;
+  position: relative;
+  width: 208px;
+  z-index: 20;
+}
+
 
 /*
  * Wraps all the branding elements, logo, name and slogan
  */
 #branding {
-  margin: 5px 5px 4px 220px;
+  float: left;
+    margin: 30px 0 0 20px;
 }
 
 
@@ -276,24 +564,18 @@ a {
  * Site name (h1)
  */
 #site-name {
-  font-size: 42px;
-  line-height: 86px;
   margin: 0;
-  padding: 0 20px;
-  text-transform: uppercase;
-  background: #EBEBEB;
 
   a {
 
     &:link,
     &:visited {
       text-decoration: none;
-      color: #004990;
     }
 
     &:hover,
     &:focus {
-      text-decoration: none;
+      text-decoration: underline;
     }
   }
 }
@@ -307,33 +589,122 @@ a {
 }
 
 
+
+
+
+
+
+/* =============================================================================
+ *   Top Bar
+ * ========================================================================== */
+
+
+
+#block-block-5 {
+
+  margin-top: 4px;
+
+  .content {
+    ul {
+      li {
+        padding: 0 3px;
+        a {
+          display: block;
+          width: 24px;
+          height: 24px;
+          @include ir;
+          background-image: url(images/sn-sprite.png);
+          background-repeat: none;
+        }
+
+        &.instagram a {
+          background-position: 0 0;
+        }
+        &.facebook a {
+          background-position: -30px 0;
+        }
+        &.youtube a {
+          background-position: -90px 0;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+/* =============================================================================
+ *   Join us links
+ * ========================================================================== */
+
+#block-block-6 {
+
+  margin-bottom: 30px !important;
+  padding-left: 50px;
+
+  .block-content {
+
+
+    a {
+      display: block;
+background: #4c4b4c;
+background: -moz-linear-gradient(top,  #4c4b4c 0%, #303131 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4c4b4c), color-stop(100%,#303131));
+background: -webkit-linear-gradient(top,  #4c4b4c 0%,#303131 100%);
+background: -o-linear-gradient(top,  #4c4b4c 0%,#303131 100%);
+background: -ms-linear-gradient(top,  #4c4b4c 0%,#303131 100%);
+background: linear-gradient(to bottom,  #4c4b4c 0%,#303131 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4b4c', endColorstr='#303131',GradientType=0 );
+
+
+      @include border-radius(4px);
+      color: #fff;
+      float: left;
+      padding: 3px 12px;
+      margin-right: 10px;
+      font-size: 16px;
+    }
+
+
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =============================================================================
  *   Page content header
  * ========================================================================== */
-
-/*
- * Main content header wraps the page title, tabs and actions links
- */
-#main-content-header {}
 
 
 /*
  * The main page title (h1)
  */
 #page-title {
-  line-height: 1;
-  margin: 20px 0 10px;
+  margin: 0;
 }
 
 
 /* =============================================================================
  *   Misc Global Styles
  * ========================================================================== */
-
-/*
- * Feed icons
- */
-.feed-icon {}
 
 
 /*
@@ -351,12 +722,6 @@ a {
   display: inline;
   margin: 0;
 }
-
-
-/*
- * Generic styles for the more link
- */
-.more-link {}
 
 
 /*
@@ -397,270 +762,20 @@ ul.links {
 .region {}
 
 
-/*
- * Regions have an inner div - perfect for adding margin, padding or borders
- */
-.region-inner {}
 
+/* =============================================================================
+ *   Links
+ * ========================================================================== */
 
-/*
- * Regions can be nested, such as when using Panels
- */
-.region-inner .region-inner {}
+a {
+  text-decoration: none;
+  color: #445780;
 
-
-
-/*
- * Leaderboard region, at the very top ususally
- */
-.region-leaderboard {
-
-  background: #445780;
-  @include background(linear-gradient(#383e68, #596c91));
-
-  .region-inner {
-    //border-bottom: 1px solid #86ABC9;
-    border-top: 2px solid #86ABC9;
+  &:hover,
+  &:focus {
+    text-decoration: underline;
   }
-
-  .block-title {
-    @include element-invisible;
-  }
-
-  .block {
-    margin: 0;
-
-    ul {
-      margin: 0;
-      padding: 0;
-      li {
-        margin: 0;
-        padding: 0;
-        display: block;
-        float: left;
-        list-style: none;
-      }
-    }
-
-    a {
-      color: #add3e7;
-      font-size: .96em;
-
-      &:hover,
-      &:focus {
-        color: #fff;
-        text-decoration: none;
-      }
-    }
-  }
-
-
-  .block-inner {
-    margin: 0;
-  }
-
-  .block-locale {
-    float: right;
-
-    li {
-
-      a {
-        display: block;
-        padding: 10px 10px 10px 0;
-        color: #fff;
-
-        &:hover,
-        &:focus {
-          color: #fff;
-          text-decoration: underline;
-        }
-      }
-    }
-
-  }
-
-  .block-user-menu {
-    float: left;
-
-    .menu li {
-      border-right: 1px solid #86ABC9;
-
-      a {
-        display: block;
-        padding: 10px 11px 10px 10px;
-        @include transition-property(all);
-        @include transition-duration(.15s);
-        @include transition-timing-function(ease-in);
-      }
-    }
-  }
-
-  // Social media
-  #block-block-5 {
-    float: right;
-    margin: 7px 7px 0 0;
-
-    li {
-
-      margin: 0 2px;
-
-      a {
-        width: 24px;
-        height: 24px;
-        padding: 2px;
-        @include ir;
-      }
-
-      &.twitter {
-        a {
-          background: url(images/twitter-24.png) no-repeat 0 0 transparent;
-        }
-      }
-
-      &.facebook {
-        a {
-          background: url(images/facebook-24.png) no-repeat 0 0 transparent;
-        }
-      }
-
-      &.youtube {
-        a {
-          background: url(images/youtube-24.png) no-repeat 0 0 transparent;
-        }
-      }
-
-    }
-  }
-
-  // Search block
-  #block-search-form {
-
-    float: right;
-    margin: 7px 10px 0 0;
-
-    input {
-      font-size: 0.96em;
-    }
-
-    input.form-text {
-      border: 1px solid #004990;
-      height: 22px;
-      padding: 0 2px;
-    }
-
-    input.form-submit {
-      margin: 1px 0 0;
-      font-weight: 400;
-    }
-
-  }
-
-
 }
-
-
-
-/*
- * Header region, embedded in the #header
- */
-.region-header {
-  position: absolute;
-  top: 5px;
-  left: 0;
-
-  .region-inner {
-     border-right: 3px solid #004990;
-  }
-
-  .block, p {
-    margin: 0;
-  }
-
-  .block-inner {}
-
-  .usaid-logo {}
-
-  .entrena-logo {
-    margin: 0 10px 0 15px;
-  }
-
-}
-
-
-/*
- * Generally used to output Drupals help block, if the help module is enabled
- */
-.region-help {}
-
-
-/*
- * Secondary content
- */
-.region-secondary-content {}
-
-
-/*
- * Sits above the main content header, like a content-top region
- */
-.region-highlighted {
-
-  .block {
-    margin: 10px 0 0;
-  }
-
-}
-
-
-/*
- * Sits below the main content, like a content-bottom region
- */
-.region-content-aside {}
-
-
-/*
- * Sidebars - targets both
- */
-.sidebar {}
-
-
-/*
- * First sidebar
- */
-.region-sidebar-first {}
-
-
-/*
- * Second sidebar
- */
-.region-sidebar-second {}
-
-
-/*
- * Tertiary content
- */
-.region-tertiary-content {}
-
-
-/*
- * Footer region
- */
-.region-footer {
-
-  .block {
-    margin: 0;
-  }
-
-
-  #block-block-1 {
-    font-size: 0.9em;
-    line-height: 1.2em;
-    width: 66%;
-  }
-
-}
-
-
-
 
 
 /* =============================================================================
@@ -675,77 +790,22 @@ ul.links {
  * You can target all of these with .nav or div[id$="menu-bar"]
  */
 
+#menu-bar {
+  border: 0 none;
+  bottom: -6px;
+  right: 0;
+  margin-top: 37px;
+}
+
 .nav {
-  clear: both;
+  clear: none;
+  float: right;
   margin: 0;
-  background: #f9f9f9;
-  //@include background(linear-gradient(#f3f3f3, #f9f9f9));
 
   ul,
   ul.menu {
     margin: 0;
     padding: 0;
-  }
-
-  li,
-  ul.menu li {
-    display: inline;
-    float: left;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  li a,
-  ul.menu li a {
-    display: block;
-    white-space: nowrap;
-    padding: 0 10px;
-
-    &:visited {}
-
-    &:hover,
-    &:focus {}
-  }
-
-  .block {
-    margin: 0;
-  }
-}
-
-
-/* =============================================================================
- *   Superfish
- * ========================================================================== */
-
-ul.sf-menu {
-  margin-bottom: 0;
-
-  a {
-    border-left: 0;
-    border-top: 0;
-    padding: 0 10px;
-    text-decoration: none;
-    height: 2.5em;
-    line-height: 2.5em;
-
-    &:link,
-    &:visited {}
-  }
-
-  li {
-    &:hover,
-    &.sfHover {
-      outline: 0;
-    }
-  }
-
-  a {
-    &:focus,
-    &:hover,
-    &:active {
-      outline: 0;
-    }
   }
 }
 
@@ -775,182 +835,6 @@ ul.sf-menu {
 }
 
 
-/*
- * Vertical style
- */
-.sf-vertical {
-  width: 100%;
-
-  li {
-    width: 100%;
-
-    &.last {}
-
-    &:hover ul,
-    &.sfHover ul {
-      left: 100%;
-      top: 0;
-      margin: 0;
-      padding: 0;
-    }
-
-    a {
-      padding: 0 10px;
-    }
-  }
-}
-
-
-/*
- * Navbar style
- */
-.sf-navbar {
-  padding-bottom: 0 !important;
-}
-
-
-/*
- * Sensible padding for the default style
- */
-#menu-bar {
-
-  .block {
-    background: #445780;
-    @include background(linear-gradient(#596c91, #383e68));
-    border: 1px solid #383e68;
-    @include border-radius(6px);
-    margin: 0 10px;
-  }
-
-  .sf-menu.sf-style-default {
-    background: none;
-
-    li,
-    li li,
-    .sf-menu.sf-style-default.sf-navbar {
-      background: none;
-    }
-
-    a {
-      font-size: 0.96em;
-      padding: 0 7px;
-      border: none;
-      color: #f9f9f9;
-     // text-align: center;
-      border-right: 1px solid #383e68;
-      @include transition-property(all);
-      @include transition-duration(.15s);
-      @include transition-timing-function(ease-in);
-
-
-      &:visited {
-        color: #f9f9f9;
-      }
-
-      &:hover,
-      &:focus {
-        text-decoration: none;
-        color: #fff;
-      }
-    }
-
-    li.last {
-      a {
-        border: 0;
-      }
-    }
-  }
-
-  .sf-menu.sf-style-default .active-trail,
-  .sf-menu.sf-style-default li:hover,
-  .sf-menu.sf-style-default li.sfHover,
-  .sf-menu.sf-style-default a:focus,
-  .sf-menu.sf-style-default a:hover,
-  .sf-menu.sf-style-default a:active {
-      background: rgba(255,255,255,.07);
-      outline: 0 none;
-  }
-}
-
-
-// Spanish words are longer
-.lang-es {
-  #menu-bar {
-    .sf-menu.sf-style-default {
-      a {
-        //font-size: 0.9em;
-        padding: 0 5px;
-      }
-    }
-  }
-}
-
-
-.not-front #menu-bar {
-  .block {
-    margin-top: 10px;
-  }
-}
-
-
-
-#block-superfish-2 {
-  float: left;
-
-  .sf-menu.sf-style-default {
-
-    li,
-    li li,
-    .sf-menu.sf-style-default.sf-navbar {
-      background: none;
-    }
-
-    a {
-      padding: 0 10px;
-      border: none;
-      color: #add3e7;
-      font-size: .96em;
-      height: 40px;
-      line-height: 40px;
-      @include transition-property(all);
-      @include transition-duration(.15s);
-      @include transition-timing-function(ease-in);
-
-      &:visited {
-        color: #add3e7;
-      }
-
-      &:hover,
-      &:focus {
-        text-decoration: none;
-        color: #fff;
-        background: none;
-      }
-    }
-
-    ul {
-      background: #383E68;
-      top: 40px;
-      @include border-radius(0px);
-
-      a {
-        height: 30px;
-        line-height: 30px;
-      }
-
-      .sf-menu.sf-style-default li:hover,
-      .sf-menu.sf-style-default li.sfHover,
-      .sf-menu.sf-style-default a:focus,
-      .sf-menu.sf-style-default a:hover,
-      .sf-menu.sf-style-default a:active {
-        outline: 0 none;
-      }
-    }
-  }
-}
-
-
-
 
 
 /* =============================================================================
@@ -958,7 +842,6 @@ ul.sf-menu {
  * ========================================================================== */
 // .at-mt is a page class
 .at-mt {
-
   .at-menu-toggle,
   .at-menu-toggle ul,
   .at-menu-toggle ul.menu {
@@ -969,18 +852,6 @@ ul.sf-menu {
 
   .at-menu-toggle-button {
     margin: 0;
-
-    a {
-      color: #fff;
-      outline: 0;
-      padding: 0 10px;
-
-      &:hover,
-      &:focus {
-        text-decoration: none;
-      }
-    }
-
   }
 
   .at-menu-toggle ul a {
@@ -999,36 +870,10 @@ ul.menu {
 
   ul {
     padding-left: 15px;
-
-    ul {
-      ul {}
-    }
   }
 
   li {
     margin: 0;
-
-    &.collapsed,
-    &.expanded,
-    &.leaf {}
-
-    a {
-
-      &:link,
-      &:visited {}
-
-      &:active,
-      &.active {}
-
-      &:hover,
-      &:focus {}
-    }
-
-    &.active a,
-    &.active-trail a {}
-
-    &.first,
-    &.last {}
   }
 }
 
@@ -1044,12 +889,6 @@ ul.menu {
  * ========================================================================== */
 
 .book-navigation {
-
-  .page-links {}
-
-  .page-previous {}
-
-  .page-next {}
 
   .page-up {
     /* Prevent text wrapping to a new line, assumes English "up" is used (two characters) */
@@ -1068,9 +907,7 @@ ul.menu {
  * ========================================================================== */
 
 #breadcrumb {
-  margin: 10px 0 30px;
-  font-size: 0.96em;
-  color:#C4C4C3;
+  margin: 10px 0;
 
   /* If the label is set to show in theme settings the label class is added */
   .breadcrumb-label {
@@ -1096,32 +933,7 @@ ul.menu {
     list-style: none;
     display: inline;
   }
-
-  li.crumb-first {}
-
-  li.crumb-last {}
-
-  a {
-
-    color: #b0b0af;
-    @include transition-property(all);
-    @include transition-duration(.15s);
-    @include transition-timing-function(ease-in);
-    &:hover,
-    &:focus {
-      text-decoration: none;
-      color: #C00430;
-    }
-  }
 }
-
-
-.breadcrumb-wrapper {
-  margin: 0;
-  border-bottom: 1px solid #ebebeb;
-}
-
-
 
 
 /* =============================================================================
@@ -1156,33 +968,6 @@ ul.pager li {
   margin: 0;
 }
 
-
-/*
- * Theme the various states of pager links
- */
-ul.pager li {
-
-  a {
-
-    &:link,
-    &:visited {}
-
-    &:active,
-    &.active {}
-
-    &:hover,
-    &:focus {}
-  }
-
-  &.pager-item {}
-  &.first {}
-  &.last {}
-  &.pager-current {}
-  &.pager-first {}
-  &.pager-previous {}
-  &.pager-next {}
-  &.pager-last {}
-}
 
 
 /* =============================================================================
@@ -1248,19 +1033,18 @@ ul.primary {
     margin: 0 1px -1px;
 
     a {
-      @include background(linear-gradient(#ebebeb, #f9f9f9));
+      background-color: $ultralight;
       border-color: $border;
       margin-right: 1px;
       padding: 0 10px;
       display: block;
       float: left;
-      height: 2em;
-      line-height: 2em;
-      @include border-radius(6px 6px 0 0);
+      height: 1.5em;
+      line-height: 1.5em;
 
       &:hover,
       &:focus {
-        @include background(linear-gradient(#ebebeb, #f9f9f9));
+        background-color: $light;
         border-color: $border;
       }
     }
@@ -1270,7 +1054,7 @@ ul.primary {
     a,
     a:hover,
     a:focus {
-      background: $page;
+      background-color: $page;
       border-bottom-color: $page;
     }
   }
@@ -1314,17 +1098,6 @@ ul.action-links {
  *  Field Styling
  * ========================================================================== */
 
-/*
- * Wrapper for any field
- */
-.field {}
-
-
-/*
- * Above and inline classes are on the field wrapper
- */
-.field-label-above {}
-
 
 /*
  * When labels are set to inline in field display settings the clearfix class is automatically added
@@ -1350,23 +1123,6 @@ ul.action-links {
 
 
 /*
- * Field types (Core)
- */
-
-/*
- * Image fields use the <figure> and <figcaption> elements from HTML5
- */
-.field-type-image {
-
-  .caption {}
-
-  .full-caption {}
-
-  .teaser-caption {}
-}
-
-
-/*
  * Taxonomy
  */
 .field-type-taxonomy-term-reference {
@@ -1385,109 +1141,6 @@ ul.action-links {
     padding: 0 10px 0 0;
   }
 }
-
-
-/*
- * Text
- */
-.field-type-text {}
-
-
-/*
- * Long text
- */
-.field-type-text-long {}
-
-
-/*
- * Text with summary
- */
-.field-type-text-with-summary {}
-
-
-/*
- * File
- */
-.field-type-file {}
-
-
-/*
- * Number/Integer
- */
-.field-type-number-integer {}
-
-
-/*
- * Decimal
- */
-.field-type-number-decimal {}
-
-
-/*
- * Number float
- */
-.field-type-number-float {}
-
-
-/*
- * List
- */
-.field-type-list-text {}
-
-
-/*
- * List boolean
- */
-.field-type-list-boolean {}
-
-
-/*
- * List integer
- */
-.field-type-list-integer {}
-
-
-/*
- * List float
- */
-.field-type-list-float {}
-
-
-/*
- * Field types (Contrib)
- */
-.field-type-datetime {}
-
-.field-type-node-reference {}
-
-.field-type-user-reference {}
-
-
-/*
- * Named fields
- */
-.field-name-body {}
-
-.field-name-field-image {}
-
-.field-name-field-tags {}
-
-
-/*
- * Underscores in field name are replaced with dashes
- */
-.field-name-field-FIELDNAME {}
-
-
-/*
- * Image Alignment Theme Settings - included here so you can easily override
- */
-
-/*
- * Float none setting
- */
-.ia-n .field-type-image,
-.iat-n .field-type-image {}
 
 
 /*
@@ -1531,47 +1184,12 @@ ul.action-links {
 
 
 /*
- * Inner wrapper for most blocks, good for margin, padding and borders, block_system_main does not have it
- */
-.block-inner {}
-
-
-/*
- * The first block in the region
- */
-.block.first {}
-
-
-/*
- * The last block in the region
- */
-.block.last {}
-
-
-/*
- * Zebra striping for each block in the region
- */
-.block.odd {}
-
-
-/*
- * Zebra striping for each block in the region
- */
-.block.even {}
-
-
-/*
  * Block title
  */
 .block-title {
   margin: 0;
+  font-weight: 400;
 }
-
-
-/*
- * Block content wrapper
- */
-.block-content {}
 
 
 /*
@@ -1591,330 +1209,82 @@ ul.action-links {
 }
 
 
-/*
- * Block for the latest news items in the first category
- */
-#block-aggregator-category-1 {}
 
+// Custom Blocks etc
 
-/*
- * Block for the latest news items in the first feed
- */
-#block-aggregator-feed-1 {}
 
-
-/*
- * First block created with "Add block" link
- */
-#block-block-1 {}
-
-
-/*
- * "Recent blog posts" block
- */
-#block-blog-recent {}
-
-
-/*
- * "Book navigation" block for the current book's table of contents
- */
-#block-book-navigation {}
-
-
-/*
- * "Recent comments" block
- */
-#block-comment-recent {}
-
-
-/*
- * "Active forum topics" block
- */
-#block-forum-active {}
-
-
-/*
- * "New forum topics" block
- */
-#block-forum-new {}
-
-
-/*
- * Language switcher block
- */
-#block-locale-language {}
-
-
-/*
- * Custom menu block
- */
-#block-menu-menu-NAME {}
-
-
-/*
- * "Recent content" block
- */
-#block-node-recent {}
-
-
-/*
- * "Syndicate" block for primary RSS feed; see also page.css's .feed-icon
- */
-#block-node-syndicate {}
-
-
-/*
- * "Most recent poll" block
- */
-#block-poll-recent {}
-
-
-/*
- * "Author information" block for the profile of the page's author
- */
-#block-profile-author-information {}
-
-
-/*
- * "Search form" block
- */
-#block-search-form {}
-
-
-/*
- * "Shortcuts" block
- */
-#block-shortcut-shortcuts {}
-
-
-/*
- * "Popular content" block
- */
-#block-statistics-popular {}
-
-
-/*
- * "Main menu" block
- */
-#block-system-main-menu {}
-
-
-/*
- * "Management" block for Drupal management menu
- */
-#block-system-management {}
-
-
-/*
- * "Navigation" block for Drupal navigation menu
- */
-#block-system-navigation {}
-
-
-/*
- * "User menu" block for Drupal user menu
- */
-#block-system-user-menu {}
-
-
-/*
- * "System help" block
- */
-#block-system-help {}
-
-
-/*
- * "Main page content" block
- */
-#block-system-main {}
-
-
-/*
- * "Powered by Drupal" block
- */
-#block-system-powered-by {}
-
-
-/*
- * "User login form" block
- */
-#block-user-login {}
-
-
-/*
- * "Who's new" block for a list of the newest users
- */
-#block-user-new {}
-
-
-/*
- * "Who's online" block for a list of the online users
- */
-#block-user-online {}
-
-
-
-
-
-// Generic block styles for select regions
-
-.region-two-66-33-second,
-.sidebar {
-
-  .block-inner {}
-
-  .block-title {
-    color: #004a8b;
-    font-size: 1.1em;
-    margin: 0;
-    padding: 4px 10px;
-    line-height: 1;
-    background: #A9CCE8;
-    @include background-image(linear-gradient(left, #fff, #7D91AF));
-  }
-
-  .block-content {
-    padding: 0 10px;
-  }
-
-  .view-content {
-
-    ul {
-      margin: 0;
-      padding: 0;
-
-      li {
-        list-style: none;
-        border-bottom: 1px dashed #eaeae8;
-        margin: 1px 0;
-        padding: 0;
-        line-height: 1.1;
-
-        a {
-          display: block;
-          padding: 5px 0;
-        }
-      }
-    }
-
-  }
-}
-
-
-.region-two-66-33-second {
-  .block {
-    margin: 10px 0 0 0;
-  }
-}
-
-
-.region-two-66-33-second {
-  .block-content {
-    font-size: 0.95em;
-  }
-}
-
-
-.sidebar {
-  .block {
-    margin: 0 0 20px;
-  }
-}
-
-
-
-
-// Front page slideshow block
 #block-views-slideshows-block {
-  position: relative;
-  margin: 10px 0;
-  overflow: hidden;
-
-  .contextual-links-wrapper {
-    display: none;
+  .block-inner {
+    margin: 0;
   }
+}
 
-  .field-slideshow {
-    padding: 0 !important;
 
-    &.with-controls {}
-  }
+// Corporate logos
+#block-block-4 {
+  text-align: center;
+  margin: 40px 0;
 
-  .field-slideshow-slide {
+  p {
+    margin: 0;
+    padding: 0;
     line-height: 0;
   }
-
-  .field-slideshow-image {}
-
-/*
-  .field-slideshow-caption {
-    position: absolute;
-    bottom: 0;
-    height: 60px;
-    width: 100%;
-    background: url(images/frontpage-slideshow-caption-background-1000.png) no-repeat right top transparent;
-    color: #fff;
-  }
-  .field-slideshow-caption-text {
-    line-height: 1;
-    display: block;
-    padding: 32px 20px 0 10px;
-    font-style: italic;
-    font-weight: bold;
-  }
-*/
-
-  .field-slideshow-controls {
-
-    a {
-      height: 16px;
-      width: 16px;
-      position: absolute;
-      top: 45%;
-      z-index: 499;
-      opacity: 0.4;
-      @include ir;
-
-
-        &:hover {
-          opacity: 1;
-        }
-    }
-
-    .prev {
-      background: url(images/prev-16.png) no-repeat 0 0 transparent;
-      left: 10px;
-    }
-    .next {
-      background: url(images/next-16.png) no-repeat 0 0 transparent;
-      right: 10px;
-    }
-
-  }
 }
 
 
 
-// Legal menu in footer
-#block-menu-menu-legal {
-  float: right;
-  clear: both;
 
-  ul {
-    padding: 0;
+
+// Front page scroll bloxes
+#block-views-publications-block-1,
+#block-views-news-block {
+  width: 49%;
+  float: left;
+  border: 1px solid #c4c4c3;
+  margin: 50px 0 40px;
+  padding: 20px;
+  background: #fff;
+
+  @include border-radius(10px);
+  -webkit-box-shadow: inset 0px 1px 4px 4px rgba(0, 0, 0, .08);
+  box-shadow: inset 0px 1px 4px 4px rgba(0, 0, 0, .08);
+
+
+  .block-title {
+    margin-bottom: 20px;
+  }
+
+  ul, li {
     margin: 0;
+    padding: 0;
+  }
 
-    li {
-      display: block;
-      float: left;
-      padding: 10px;
+  li {
+    list-style: 0;
+  }
 
-      a {
-        color: #fff;
-      }
-    }
+
+  .view-content {
+    overflow-y: scroll;
+    text-align: left;
+    height: 300px;
+  }
+
+  .item-list {
+    padding-right: 15px;
   }
 }
+
+
+#block-views-publications-block-1 {
+  float: right;
+}
+
+
+
+
+
 
 
 
@@ -1926,103 +1296,13 @@ ul.action-links {
 .node {
   margin-bottom: 20px;
 
-  &.node-promoted {}
-
-  &.node-sticky {}
-
-  &.node-by-viewer {}
-
-  &.node-teaser {}
-
-  &.node-full {}
-
-  &.odd {}
-
-  &.even {}
-
   .node-title {
     margin: 0;
-  }
-
-  .user-picture {}
-
-  .submitted {
-
-    .username {}
-
-    time {}
-  }
-
-  .node-content {
-
-    h2, h3, h4, h5 {
-      margin: 1.5em 0 0.5em;
-    }
-
-    ul {
-      margin: 0 0 1em;
-      padding: 0;
-
-      li {
-        margin: 0 0 10px;
-        padding: 0 0 0 15px;
-        list-style: none;
-        background: url(images/list-style-bullet.png) no-repeat left 6px transparent;
-      }
-
-
-      &.simple-list {
-
-        padding: 0 0 0 15px;
-        color: #7D91AF;
-
-        li {
-          margin: 0;
-          padding: 0;
-          list-style: square;
-          background: none;
-        }
-      }
-
-    }
-
-
-  }
-
-  ul.links {
-
-    li {}
-    li a {}
-
-    li.node-read-more a {}
-    li.comment-add a {}
-    li.comment-comments a {}
-    li.comment-new-comments a {}
-    li.blog-sernames-blog a {}
-    li.print-html a {}
-    li.print-email a {}
-    li.print-pdf a {}
   }
 }
 
 
-.preview .node {}
 
-
-/*
- * All nodes are given a node-FOO class that describes the type of content that
- * it is. If you create a new content type called "my-custom-type", it will
- * receive a "node-my-custom-type" class.
- */
-.node-page {}
-
-.node-article {}
-
-.node-book {}
-
-.node-forum {}
-
-.node-poll {}
 
 
 /* =============================================================================
@@ -2052,29 +1332,6 @@ ul.action-links {
  */
 .comment {
   margin-bottom: 20px;
-
-  &.first {}
-
-  &.last {}
-
-  &.odd {}
-
-  &.even {}
-
-  .user-picture {}
-
-  .submitted {
-
-    p {}
-
-    .username {}
-
-    time {}
-  }
-
-  .user-signature {}
-
-  ul.links {}
 }
 
 
@@ -2084,30 +1341,6 @@ ul.action-links {
 .comment-title {
   margin: 0;
 }
-
-
-/*
- * Comment states
- */
-.comment-new {}
-
-.comment-by-anonymous {}
-
-.comment-by-node-author {}
-
-.comment-by-viewer {}
-
-.comment-title-hidden {}
-
-.comment-with-picture {}
-
-.comment-with-signature {}
-
-
-/*
- * Preview of the comment before submitting new or updated comment
- */
-.comment-preview {}
 
 
 /*
@@ -2145,15 +1378,8 @@ ul.action-links {
     font-weight: 700;
   }
 
-  label.option {
-  }
-
   .description {
     font-size: 0.85em;
-  }
-
-  &.form-checkboxes ,
-  &.form-radios {
   }
 }
 
@@ -2164,26 +1390,6 @@ ul.action-links {
 .marker,
 .form-required {
   color: $highlight;
-}
-
-
-/*
- * The submit button
- */
-.form-submit {
-}
-
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  background: #445780;
-  @include background(linear-gradient(#596c91, #383e68));
-  border: 1px solid #383e68;
-  @include border-radius(6px);
-  color: #FFFFFF;
-  padding: 4px 6px;
-  margin: 0 3px 0 0;
 }
 
 
@@ -2205,6 +1411,7 @@ fieldset {
  * Tips for Drupal's input formats
  */
 .tips {
+  font-size: 0.9em;
 }
 
 
@@ -2222,80 +1429,6 @@ a.button {
 .password-parent,
 .confirm-parent {
   margin: 0;
-}
-
-
-#search-form {
-  .container-inline div,
-  .container-inline label {
-      display: block;
-  }
-  .form-item, .form-actions {
-    margin-bottom: 5px;
-    margin-top: 5px;
-  }
-
-  .form-wrapper {
-    margin-bottom: 10px;
-  }
-
-  .form-type-textfield {
-    label {
-      margin-bottom: 2px;
-    }
-  }
-
-   input.form-text {
-     max-width: 95%;
-  }
-
-  input.form-submit {
-  }
-}
-
-.page-search {
-
-  #block-system-main {
-    ul {
-      margin: 0;
-      padding: 0 0 0 18px;
-    }
-  }
-
-  ol.search-results {
-    margin: 0;
-    padding: 0 0 0 20px;
-    border-top: 1px dashed #EAEAE8;
-
-    p,
-    h3,
-    .search-snippet-info {
-      margin: 0;
-      padding: 0;
-      font-size: 1em;
-    }
-
-    .search-info {
-      font-size: 0.9em;
-      color: #C4C4C3;
-
-      a {
-        color: #C4C4C3;
-      }
-    }
-
-    li {
-      padding: 10px 0;
-      border-bottom: 1px dashed #EAEAE8;
-      list-style: decimal;
-
-      &:hover {
-        //background: #f9f9f9;
-      }
-    }
-
-  }
-
 }
 
 
@@ -2388,18 +1521,6 @@ tr {
 }
 
 
-.lt-ie8 tr {
-
-  &.even,
-  &.odd {
-
-    th,
-    td {
-    }
-  }
-}
-
-
 /*
  * Forum tables
  * Core sets white-space to nowrap, which makes no sense
@@ -2422,48 +1543,15 @@ tr {
 
 div {
   &.messages {
-
-    background-position: 10px 17px;
-    border: 0 none;
-    margin: 0;
-    padding-bottom: 20px;
-    padding-top: 20px;
+  // Left and right margin are set by the global gutter width
+  margin-bottom: 10px;
+  margin-top: 10px;
 
     ul {
       margin-top: 0;
       margin-bottom: 0;
     }
   }
-
-  &.status {
-  }
-
-  &.warning {
-  }
-}
-
-tr.warning {
-}
-
-
-div.error,
-tr.error {
-}
-
-
-.error {
-}
-
-
-.warning {
-}
-
-
-/*
- * Unpublished nodes
- */
-.node-unpublished,
-.comment-unpublished {
 }
 
 

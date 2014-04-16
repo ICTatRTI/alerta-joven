@@ -12,7 +12,7 @@
  * Preprocess variables for the html template.
  */
 
-function alertajoven_preprocess_html(&$vars) {
+function alertajoven_modern_preprocess_html(&$vars) {
   global $theme_key;
 
   // Add facebook xlms attribute to the html element, required by IE
@@ -29,7 +29,7 @@ function alertajoven_preprocess_html(&$vars) {
 /**
  * Override or insert variables for the page templates.
  */
-function alertajoven_preprocess_page(&$vars) {
+function alertajoven_modern_preprocess_page(&$vars) {
   // Work around a perculier bug/feature(?) in Drupal 7 which incorrectly sets
   // the page title to "User account" for all three of these pages.
   $title = drupal_get_title();

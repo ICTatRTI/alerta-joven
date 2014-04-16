@@ -5,19 +5,31 @@
 # If you'd like to learn more about Sass and Compass, see the sass/_README.txt
 # file for more information.
 #
-# This config file is borrowed from Zen, so thanks JohnAlbin for your hard work
-# in bringing such fine tools to Drupal so us mere mortals may benefit.
+
+# Required plugins
+# -----------------------------------------------------------------------------
+# The default layouts that ship with the Adaptivetheme are built using Susy 2,
+# Visit susy.oddbird.net.
+
+# This sets the required gems and versions, if the right version is not installed
+# compass with throw an error, hopefully. Scout and Codekit should also pick this
+# up and install the right gems. A bundle Gemfile is included so you can run
+# bundle install.
+gem "compass", "0.12.2"
+require "compass"
 
 
 # Set the Environment Variable
+# -----------------------------------------------------------------------------
 # Using :development enables the use of FireSass but will bloat the stylesheets
 # with debug code, be sure to change to :production when moving from development
 # to production servers.
-environment = :development
-#environment = :production
+#environment = :development
+environment = :production
 
 
 # Location of the theme's resources.
+# -----------------------------------------------------------------------------
 # Compass will overwrite the CSS files in the css_dir when set to watch.
 css_dir = "css"
 sass_dir = "sass"
